@@ -1,0 +1,270 @@
+.tabs-container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.tabs {
+    height: 52px;
+    background: #1c1d30;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 3px;
+}
+
+.tab-pan {
+    min-width: 145px;
+    color: #fff;
+    height: 46px;
+    line-height: 46px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+}
+
+.is-active {
+    background-color: #27273f;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 3px 3px 0 #151629;
+    text-shadow: 0 1px 1px #23233b;
+}
+
+.line-perch {
+    height: 25px;
+    border-left: 1px solid #1c1d30;
+    margin: 0 10px;
+}
+
+.list {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin: 69px auto 0;
+    padding-bottom: 43px;
+}
+
+.item {
+    width: 310px;
+    background-color: #27273f;
+    border-radius: 23px;
+    box-shadow: 0 10px 36px 0 #18142b;
+    margin-bottom: 60px;
+    margin-right: 35px;
+    transition: all .3s ease-in-out;
+}
+
+.no-item {
+    display: none;
+}
+
+.empty-item {
+ height: 500px;
+ font-size: 18px;
+ font-weight: 400;
+ text-align: center;
+ color: #9a9ab4;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ justify-content: center;
+ padding-bottom: 50px;
+ margin: 0 auto;
+}
+
+.item-container {
+    padding: 35px 26px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 11px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.chain-info {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 400;
+
+}
+.chain-logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.chain-name {
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    padding: 5px 13px;
+    background-color: #33334b;
+    border-radius: 11px;
+}
+
+.right {
+    text-align: left;
+
+}
+.top-div {
+    display: flex;
+    flex-direction: column;
+}
+.ido-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 24px;
+    margin: 0 0 16px;
+    text-shadow: 0 1px 1px #1b1b31;
+}
+
+.amount-container {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.amount-title {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #666680;
+    text-shadow: 0 1px 1px #20203a;
+    margin-bottom: 1px;
+}
+
+.amount-value {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: #e9ebee;
+    text-shadow: 0 1px 1px #20203a;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    line-height: 16px;
+    height: 16px;
+}
+
+.perch {
+    width: 12px;
+    height: 12px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #33334b;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perch-center {
+    width: 7px;
+    height: 7px;
+    background-color: #a453f6;
+    border-radius: 50%;
+}
+
+.perch-line {
+    position: absolute;
+    height: 12px;
+    width: 2px;
+    background-color: #33334b;
+    bottom: 11px;
+    left: 5px;
+}
+
+.progress-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    margin-top: 5px;
+}
+
+.el-progress {
+    position: relative;
+    line-height: 1;
+}
+
+.el-progress-bar {
+    padding-right: 0;
+    margin-right: 0;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.el-progress-bar__outer {
+    height: 12px;
+    background-color: #33334b;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+}
+
+.el-progress-bar__inner {
+    width: 100%;
+    background-color: rgb(51, 51, 75);
+    height: 10px;
+    border-radius: 5px;
+
+}
+
+.ido-time {
+    color: #73738d;
+}
+
+.button-div {
+    margin-top: 38px;
+}
+
+.ido-with-whitelist {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ido-btn-detail {
+    width: 117px;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 10px 15px 0 #452674;
+}
+
+
+
+.linear-btn {
+    background-color: transparent ;
+    background-image: linear-gradient(50deg , #fc03ad 10% , #5f2edf 70%, #fc03ad 99%)!important;
+    transition: 0.3s;
+}
