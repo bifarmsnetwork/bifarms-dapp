@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Coin from "../../images/coin.png";
 import "./Launchpad.css";
 
 const Launchpad = () => {
@@ -7,8 +8,10 @@ const Launchpad = () => {
   const toggleTab = (index) => {
     setToggleState(index);
   }
+
   return (
      <>
+     <div className="ido">
       <div className="tabs-container">
         <div className="tabs">
           <div className={toggleState === 1 ? "tab-pan is-active" : "tab-pan"} onClick={() => toggleTab(1)}>Live[1]</div>
@@ -24,7 +27,7 @@ const Launchpad = () => {
             <div className="item-container">
               <div className="left">
                 <img
-                  src="https://static.cybertron.world/images/launchpad/80a6499f744749c4abf4fb7c4f12b74c"
+                  src={Coin}
                   alt="logo"
                   className="logo"
                 />
@@ -39,13 +42,13 @@ const Launchpad = () => {
               </div>
               <div className="right">
                 <div className="top-div">
-                  <p className="ido-name">Derify Public round</p>
+                  <p className="ido-name">BiFarms Private Round</p>
                   <div className="amount-container">
                     <div className="amount color3">
                       <div className="amount-title">Price</div>
                       <div className="amount-value">
                         {" "}
-                        1 DRF = 0.8 BUSD / 1 BUSD = 1.25 DRF
+                        1 BFS = 6.00 BUSD / 1 BUSD = 0.1666 DRF
                       </div>
                     </div>
                   </div>
@@ -53,8 +56,8 @@ const Launchpad = () => {
                     <div className="amount color3">
                       <div className="amount-title"> Soft/Hard Cap</div>
                       <div className="amount-value">
-                        <span>0 DRF - </span>
-                        <span>150000 DRF</span>
+                        <span>0 BFS - </span>
+                        <span>100,000 BFS</span>
                       </div>
                     </div>
                   </div>
@@ -66,14 +69,14 @@ const Launchpad = () => {
                           <div className="perch">
                             <div className="perch-center"></div>
                           </div>
-                          " 03.26 08:00 2022 UTC"
+                          03.28 09.00 2022 UTC
                         </div>
                         <div className="end-time time">
                           <div className="perch">
                             <div className="perch-line"></div>
                             <div className="perch-center"></div>
                           </div>
-                          "03.27 08.00 2022 UTC"
+                          04.01 09.00 2022 UTC
                         </div>
                       </div>
                     </div>
@@ -83,8 +86,8 @@ const Launchpad = () => {
                       <div className="amount-title">Progress</div>
                       <div className="amount-value">
                         <div className="progress-desc">
-                          <span> 0 DRF </span>
-                          <span> 150000 DRF</span>
+                          <span> 0 BUSD </span>
+                          <span> 250,000 BUSD</span>
                         </div>
                         <div className="progress-plan progress-status2">
                           <div
@@ -143,7 +146,7 @@ const Launchpad = () => {
           
         </div>
         </div>
-      
+      </div>
     </>
   );
 };

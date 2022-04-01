@@ -1,12 +1,21 @@
 import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Launchpad from './Launchpad'
+import Details from './components/Details/Details';
+import Launchpad from './components/Launchpad/Launchpad';
+import Navbar from './components/Navbar/Navbar';
 
 const App = () => {
   return (
-    <div className='app-container'>
-        <Launchpad/>
-    </div>
+    <BrowserRouter>
+    <Navbar/>
+    <Routes>
+      <Route path="/" element = {<Launchpad/>}/>
+      <Route path="/details" element = {<Details/>}/>
+    </Routes>
+    
+    </BrowserRouter>
+
   )
 }
 

@@ -1,0 +1,123 @@
+.ido-detail {
+    max-width: 1200px;
+    width: 100%;
+    min-height: 570px;
+    margin: 0 auto;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    padding-top: 70px;
+
+}
+
+.back-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0  auto 20px ;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    color: #9999b3;
+    cursor: pointer;
+}
+
+.ido-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 151px;
+}
+
+.ido-container-left {
+    width: 777px;
+    border-radius: 23px;
+    padding: 40px 48px;
+    box-sizing: border-box;
+    background-color: #27273f;
+    box-shadow: 0 10px 36px 0 #18142b;
+}
+
+.item-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 17px;
+}
+
+.idologo {
+    display: flex;
+}
+
+.ido-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 17px;
+    background-color: #fff;
+}
+
+.ido-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 1px 1px #1b1b31;
+    width: 400px;
+    line-height: 40px;
+}
+
+.ido-desc {
+    font-size: 14px;
+    font-weight: 400;
+    color: #9999b3;
+    line-height: 19px;
+}
+
+.ido-links {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 25px;
+    font-size: 18px;
+
+}
+.ido-link-item {
+    cursor: pointer;
+}
+
+.ido-link-item img {
+    width: 18px;
+    height: 18px;
+}
+
+.cap {
+    display: flex;
+    justify-content: start;
+}
+
+.soft-cap {
+    margin-right: 136px;
+}
+
+.item-column {
+    margin-bottom: 24px;
+}
+
+.column-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #feffff;
+    line-height: 19px;
+}
+
+.cap-value {
+    margin-top: 7px;
+}
+
+.column-value {
+    font-size: 14px;
+    font-weight: 400;
+    color: #9999b3;
+    line-height: 19px;
+}
