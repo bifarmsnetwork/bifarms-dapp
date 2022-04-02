@@ -23,19 +23,19 @@ const Details = () => {
                     alt="logo"
                     className="ido-logo"
                   />
-                  <span className="ido-name"> Nerv Protocol </span>
+                  <span className="ido-name"> BiFarms </span>
                 </div>
               </div>
               <div className="ido-desc">
-                Nerv Protocol will be on every Game and App Developers Mind
-                within 6 Months. With Nerv, Developers will be able to make
-                every Transaction on their App or Game seemingly Gasless. Users
-                will experience every Transaction on this App or Game as
-                Gasless. This can be achieved by Developers filling up Caskets
-                with NRV. This NRV can be allocated to Users of their App or
-                Game to Pay for Gas. Another Use Case of Nerv is to make
-                Transactions for Governance, like with the Incubator Protocol on
-                0xPAD, Gasless.
+                BiFarms is a Decentralized, Multi-Chain Yield Optimizer that
+                focuses high yield on crypto assets & All In One Tierless
+                Launchpad. BiFarms is a DeFi platform that allows its users to
+                earn compound interest on their crypto holdings. Through a set
+                of investment strategies secured and enforced by smart
+                contracts, BiFARMS network automatically maximizes the user
+                rewards from various liquidity pools (LPs),‌ ‌automated market
+                making (AMM) projects, and‌ other yield‌ farming
+                ‌opportunities in the DeFi ecosystem.
               </div>
             </div>
             <div className="ido-links">
@@ -73,11 +73,11 @@ const Details = () => {
             <div className="cap">
               <div className="soft-cap item-column">
                 <div className="cap-title column-title"> Soft Cap</div>
-                <div className="cap-value column-value"> 0 NRV </div>
+                <div className="cap-value column-value"> 0 BFM </div>
               </div>
               <div className="hart-cap item-column">
                 <div className="cap-title column-title"> Hard Cap</div>
-                <div className="cap-value column-value"> 100,000,000 NRV </div>
+                <div className="cap-value column-value"> 50000 BFM </div>
               </div>
             </div>
             <div className="supported-coin item-column">
@@ -102,28 +102,26 @@ const Details = () => {
             <div className="item-column">
               <div className="column-title"> Project Introduction </div>
               <div className="column-value">
-                Nerv uses a Deflationary Token Economy. Nerv will have a Fixed
-                Number of Tokens. Nerv will have a lower NFT Marketplace
-                Commission then most other NFT Marketplaces. A Portion of
-                Profits from the Marketplace will be used to buyback and burn
-                Tokens. Buyback and burn Mechanism when Prices drop below a
-                certain Threshold. The same NRV Token will be used across the
-                entire Ecosystem of Apps, Staking, Validating, Trading and
-                Governance. As Demand grows, the Price of NRV will rise
-                Exponentially.
+              BiFARMS is a Decentralized Finance (DeFi) Yield Optimizer project, that allows its users to make more crypto with crypto. 
+DeFi applications are unique in the sense that they are permission less and trustless, meaning that anyone with a supported wallet 
+can interact with them without the need for a trusted middlemen. BiFARMS caters its users by making it easy to get a yield on their crypto capital 
+in a safe and decentralized manner. Through a set of smart contracts and several investment strategies, BiFARMS automatically maximizes the user rewards 
+from various liquidity pools (LPs), automated market making (AMM) projects, and other yield farming opportunities in the DeFi ecosystem. 
+This provides a huge advantage over attempting to do this manually yourself. BiFARMS up those yields!
+
                 <br />
                 <br />
                 Token information [Deflationary]
                 <br />
-                Type: BEP20, CW20
+                Type: BEP20
                 <br />
-                Ticker: NRV
+                Ticker: BFM
                 <br />
-                Total supply: 10,000,000,000 NRV(fixed)
+                Total supply: 1000000
                 <br />
-                Initial circulating supply: 252,000,000 $NRV
+                Initial circulating supply: 52000 BFM
                 <br />
-                Initial market cap: $********** USD (Public Sales + Airdrop)
+                Initial market cap: $520000 USD 
                 <br />
                 Precise Emission Type: Burn & Mint Equilibrium, Programmatic
                 Burn
@@ -164,9 +162,45 @@ const Details = () => {
               </div>
             </div>
             <div className="harvestDesc"></div>
-
           </div>
-          <div className="ido-container-right"></div>
+          <div className="ido-container-right">
+            <div className="left">
+              <img src="" alt="" className="logo windmill" />
+              <div>
+                <p className="ido-name"> Bifarms </p>
+                <div className="ido-tags">
+                  <div className="status">
+                    <span> Ended </span>
+                  </div>
+                  <div className="chain-info">
+                    <img src="" alt="" />
+                    <div className="chain-name"> BSC </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div className="right">
+              <div className="top-div">
+                <div className="amount-container">
+                  <div className="amount color3">
+                    <div className="amount-title">Time</div>
+                    <div className="amount-value">
+                      <div className="start-time time">
+                      2022.04.02 08:00 UTC
+                  
+                      </div>
+                      <div className="end-time time">
+                      2022.04.02 12:00 UTC
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
     </>

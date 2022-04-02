@@ -31,18 +31,18 @@ const Launchpad = () => {
                   alt="logo"
                   className="logo"
                 />
-                <div className="chain-info">
+                {/* <div className="chain-info">
                   <img
                     src="https://static.erax.io/app/images/chain/BSC.png"
                     alt=""
                     className="chain-logo"
                   />
                   <div className="chain-name">BSC</div>
-                </div>
+                </div> */}
               </div>
               <div className="right">
                 <div className="top-div">
-                  <p className="ido-name">BiFarms Private Round</p>
+                  <p className="ido-name">BiFarms Seed Round</p>
                   <div className="amount-container">
                     <div className="amount color3">
                       <div className="amount-title">Price</div>
@@ -66,16 +66,16 @@ const Launchpad = () => {
                       <div className="amount-title"> Time </div>
                       <div className="amount-value">
                         <div className="start-time time">
-                          <div className="perch">
+                          {/* <div className="perch">
                             <div className="perch-center"></div>
-                          </div>
+                          </div> */}
                           03.28 09.00 2022 UTC
                         </div>
                         <div className="end-time time">
-                          <div className="perch">
+                          {/* <div className="perch">
                             <div className="perch-line"></div>
                             <div className="perch-center"></div>
-                          </div>
+                          </div> */}
                           04.01 09.00 2022 UTC
                         </div>
                       </div>
@@ -119,11 +119,11 @@ const Launchpad = () => {
                   <div className="button-div">
                     <div className="ido-with-whitelist">
                       <div className="ido-btn-detail shake-shake linear-btn">
-                        <div className="ido-btn-white-list"> WhiteLists </div>
+                        <div className="ido-btn-white-list"> Details </div>
                       </div>
-                      <div className="ido-btn-detail shake-shake linear-btn">
-                        Partcipate
-                      </div>
+                      {/* <div className="ido-btn-detail shake-shake linear-btn">
+                        Details
+                      </div> */}
                     </div>
                   </div>
                 </div>
