@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Details.css";
+import Logo from '../../images/coin.png';
 
 const Details = () => {
   return (
@@ -23,7 +24,7 @@ const Details = () => {
               <div className="item-top">
                 <div className="idologo">
                   <img
-                    src="https://static.cybertron.world/images/launchpad/d282f5147e854a6098acf3862c6ed646"
+                    src={Logo}
                     alt="logo"
                     className="ido-logo"
                   />
@@ -133,43 +134,13 @@ This provides a huge advantage over attempting to do this manually yourself. BiF
                 Capped Supply: Yes
                 <br />
                 <br />
-                One Feature of our chain will be payment of gas fee in different
-                tokens like BTC, ETH, UST, LUNA or ATOM, we think giving user
-                flexibility to pay gas fee is great way for user to explore a
-                chain, unlike in Ethereum where user first have to transfer
-                token like UST then to send it eth have to be sent in another
-                transaction.
-                <br />
-                <br />
-                Some important points to keep in mind about tokens.
-                <br />
-                1. Initially Token will be on different chains like solana, BSC,
-                terra but eventually when we are ready for mainnet then tokens
-                will be 1:1 swap-able with native NRV coin.
-                <br />
-                2. The sum of all tokens on all chains will always come out to
-                be 10 Billion.
-                <br />
-                3. To mint a token on another chain the same amount of token on
-                another chain will have to be burned.Token will be deflationary
-                over the time, and will have regular buy and burn mechanism in 3
-                cases:
-                <br />
-                --1.Profits from the marketplace will be used to buyback tokens
-                and burn from initial supply.
-                <br />
-                --2.All the gas fee in case of any will be burned.
-                <br />
-                --3.Tokens from the Treasury will be burned in case of any
-                market pressure or other event, till it has 10 % of supply.
-                <br />
               </div>
             </div>
             <div className="harvestDesc"></div>
           </div>
           <div className="ido-container-right">
             <div className="left">
-              <img src="" alt="" className="logo windmill" />
+              <img src={Logo} alt="" className="logo windmill" />
               <div>
                 <p className="ido-name"> Bifarms </p>
                 <div className="ido-tags">

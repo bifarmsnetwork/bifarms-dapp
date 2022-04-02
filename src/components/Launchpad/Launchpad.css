@@ -60,7 +60,7 @@
     width: 310px;
     background-color: #071c2d;
     border-radius: 23px;
-    box-shadow: 0 10px 36px 0 #18142b;
+    box-shadow: 10px 10px 10px 10px #03111c;
     margin-bottom: 60px;
     margin-right: 35px;
     transition: all .3s ease-in-out;
@@ -264,13 +264,14 @@
     font-weight: 700;
     text-align: center;
     color: #fff;
-    box-shadow: 0 10px 15px 0 #452674;
+    box-shadow: 0 10px 15px 0 #071c2d;
+    border: 1px solid #0da0d4;
 }
 
 
 
 .linear-btn {
     background-color: transparent ;
-    border: 1px solid #0da0d4;
+    
     transition: 0.3s;
 }
