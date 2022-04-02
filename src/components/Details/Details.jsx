@@ -19,7 +19,7 @@ const Details = () => {
         </div>
         <div className="ido-container">
           <div className="ido-container-left">
-            <div className="item">
+            <div className="item1">
               <div className="item-top">
                 <div className="idologo">
                   <img
@@ -30,7 +30,7 @@ const Details = () => {
                   <span className="ido-name"> BiFarms </span>
                 </div>
               </div>
-              <div className="ido-desc">
+              <div className="ido-desc line4hidden">
                 BiFarms is a Decentralized, Multi-Chain Yield Optimizer that
                 focuses high yield on crypto assets & All In One Tierless
                 Launchpad. BiFarms is a DeFi platform that allows its users to
@@ -86,7 +86,7 @@ const Details = () => {
             </div>
             <div className="supported-coin item-column">
               <div className="coin-title column-title"> Supported Coin </div>
-              <div className="unit"> BUSD </div>
+              {/* <div className="unit"> BUSD </div> */}
               <div className="exchange-rate column-value">
                 <span> 1 NRV = 0.001 BUSD / 1 BUSD = 1,000 NRV</span>
               </div>
