@@ -121,3 +121,80 @@
     color: #9999b3;
     line-height: 19px;
 }
+
+.ido-container-right {
+    width: 372px;
+    padding: 39px 31px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 23px;
+    background-color: #27273f;
+    box-shadow: 0 10px 36px 0 #18142b;
+    box-sizing: border-box;
+
+}
+
+.left {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 29px;
+
+}
+
+.logo {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    margin-right: 17px;
+    background: #fff;
+
+}
+
+.ido-tags {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 6px;
+}
+
+.status {
+    line-height: 22px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 12px;
+    background-color: #33334b;
+    color: #fff;
+}
+
+.chain-info {
+    line-height: 22px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 12px;
+    background: #33334b;
+    margin: 14px;
+
+
+}
+
+.chain-name {
+    color: #e9ebee;
+    line-height: 22px;
+    font-size: 12px;
+    
+
+}
+
+.right {
+
+}
+
+.top-div {
+
+}

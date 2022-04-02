@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Coin from "../../images/coin.png";
 import "./Launchpad.css";
 
@@ -119,7 +120,10 @@ const Launchpad = () => {
                   <div className="button-div">
                     <div className="ido-with-whitelist">
                       <div className="ido-btn-detail shake-shake linear-btn">
+                        <Link to="/details">
                         <div className="ido-btn-white-list"> Details </div>
+                        </Link>
+                        
                       </div>
                       {/* <div className="ido-btn-detail shake-shake linear-btn">
                         Details

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Details.css";
 
 const Details = () => {
@@ -7,10 +8,13 @@ const Details = () => {
       <div className="ido-detail">
         <div className="back">
           <div className="back-container">
+            <Link to="/">
             <span>
               <i className="icon el-icon-arrow-left"></i>
               Back
             </span>
+            </Link>
+           
           </div>
         </div>
         <div className="ido-container">
