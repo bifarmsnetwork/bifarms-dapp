@@ -11,8 +11,8 @@ const Navbar = () => {
             <img src={Logo} alt="Logo" className='header-left-logo' />
                 <div className="nav">
                     <div className="n-item"> Launchpad </div>
-                    <div className="n-item"> Earning </div>
-                    <div className="n-item"> Bridge </div>
+                    <div className="n-item"> Farm </div>
+                    <div className="n-item"> Pool </div>
                 </div>
 
             </div>
