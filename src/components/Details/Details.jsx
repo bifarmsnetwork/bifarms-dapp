@@ -89,19 +89,19 @@ const Details = () => {
               <div className="coin-title column-title"> Supported Coin </div>
               {/* <div className="unit"> BUSD </div> */}
               <div className="exchange-rate column-value">
-                <span> 1 NRV = 0.001 BUSD / 1 BUSD = 1,000 NRV</span>
+                <span> 1 BFM = 5.00 BUSD / 1 BUSD = 0.20 BFM</span>
               </div>
             </div>
             <div className="item-column">
               <div className="column-title"> Lock-up rules </div>
               <div className="column-value">
-                Allocation: 100-2000 BUSD
+                Allocation: 500-25000 BUSD
                 <br />
                 Vesting time and rules:
                 <br />
-                25% TGE, 25% monthly
+                Seed Round - 10% unlocked at TGE, cliff 2 months. 
                 <br />
-                The token contract address is awaiting official announcement.
+                The rest 90% will be unlocked monthly in the next 15 months.
               </div>
             </div>
             <div className="item-column">
