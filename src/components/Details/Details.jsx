@@ -6,6 +6,7 @@ import Logo from '../../images/coin.png';
 const Details = () => {
   return (
     <>
+    <div className="ido-content">
       <div className="ido-detail">
         <div className="back">
           <div className="back-container">
@@ -177,6 +178,7 @@ This provides a huge advantage over attempting to do this manually yourself. BiF
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   );

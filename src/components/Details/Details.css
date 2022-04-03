@@ -1,8 +1,16 @@
+.ido-content {
+    display: block;
+    background-color: #071c2d;
+    height: auto;
+    margin-bottom: 50px;
+}
+
 .ido-detail {
     max-width: 1200px;
     width: 100%;
     min-height: 570px;
     margin: 0 auto;
+    
 }
 
 .back {
