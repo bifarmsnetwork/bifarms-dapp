@@ -12,7 +12,7 @@
 
 .tabs {
     height: 52px;
-    background: #1c1d30;
+    background: #03111c;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -33,16 +33,16 @@
 }
 
 .is-active {
-    background-color: #27273f;
+    background-color: #071c2d;
     border-radius: 10px;
     color: #fff;
-    box-shadow: 0 3px 3px 0 #151629;
+    box-shadow: 0 3px 3px 0 #03111c;
     text-shadow: 0 1px 1px #23233b;
 }
 
 .line-perch {
     height: 25px;
-    border-left: 1px solid #1c1d30;
+    border-left: 1px solid #03111c;
     margin: 0 10px;
 }
 
