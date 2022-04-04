@@ -1,7 +1,5 @@
 .ido {
-    padding-top: 87px;
-    background-color: #071c2d;
-    height: 100vh;
+    
 }
 
 .tabs-container {
@@ -252,26 +250,21 @@
 .ido-with-whitelist {
     display: flex;
     justify-content: space-between;
+    text-decoration: none;
 }
 
 .ido-btn-detail {
-    width: 117px;
-    height: 44px;
-    line-height: 44px;
-    border-radius: 9px;
-    cursor: pointer;
-    font-size: 12px;
-    font-weight: 700;
-    text-align: center;
+    text-decoration: none;
+    height: auto;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    border: 0 #000;
     color: #fff;
-    box-shadow: 0 10px 15px 0 #071c2d;
-    border: 1px solid #0da0d4;
+    background-image: linear-gradient(180deg , #2669f5 , #2669f5);
 }
 
 
 
-.linear-btn {
-    background-color: transparent ;
-    
-    transition: 0.3s;
-}

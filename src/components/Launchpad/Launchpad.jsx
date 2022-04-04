@@ -12,7 +12,8 @@ const Launchpad = () => {
 
   return (
      <>
-     <div className="ido">
+     <div className="el-main">
+      <div className="ido">
       <div className="tabs-container">
         <div className="tabs">
           <div className={toggleState === 1 ? "tab-pan is-active" : "tab-pan"} onClick={() => toggleTab(1)}>Live[1]</div>
@@ -120,7 +121,7 @@ const Launchpad = () => {
                   <div className="button-div">
                     <div className="ido-with-whitelist">
                       <div className="ido-btn-detail shake-shake linear-btn">
-                        <Link to="/details">
+                        <Link to="/details" style={{ textDecoration: 'none' }}>
                         <div className="ido-btn-white-list"> Details </div>
                         </Link>
                         
@@ -150,6 +151,7 @@ const Launchpad = () => {
           
         </div>
         </div>
+      </div>
       </div>
     </>
   );

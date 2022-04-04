@@ -57,7 +57,19 @@
 }
 
 .connect {
-    min-width: 105px;
+    height: auto;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    border: 0 #000;
+    color: #fff;
+    background-image: linear-gradient(180deg , #2669f5 , #2669f5);
+    
+}
+
+/* min-width: 105px;
     box-sizing: border-box;
     padding: 0 24px;
     height: 48px;
@@ -72,5 +84,4 @@
     text-shadow: 0 1px 1px #20203a;
     cursor: pointer;
     position: relative;
-    margin-right: 22px;
-}
+    margin-right: 22px; */

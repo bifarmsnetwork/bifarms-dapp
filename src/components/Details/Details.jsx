@@ -13,7 +13,7 @@ const Details = () => {
       <div className="ido-detail">
         <div className="back">
           <div className="back-container">
-            <Link to="/">
+            <Link to="/" style={{ textDecoration: 'none' }}>
             <span>
               <i className="icon el-icon-arrow-left"></i>
               Back
