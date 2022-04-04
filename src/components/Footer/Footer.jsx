@@ -1,4 +1,8 @@
 import React from 'react';
+import { FaMediumM , FaTelegramPlane } from 'react-icons/fa';
+import { FiTwitter , FiGithub } from 'react-icons/fi';
+import { SiDiscord } from 'react-icons/si';
+
 import './Footer.css';
 
 const Footer = () => {
@@ -19,25 +23,25 @@ const Footer = () => {
                     <div className="community pc-community">
                         <div className="community-line">
                             <div className="community-item">
-                                <img src="" alt="" />
+                                <FiTwitter/>
                                 <span> Twitter </span>
                             </div>
                             <div className="community-item">
-                                <img src="" alt="" />
+                                <FiGithub/>
                                 <span> Github </span>
                             </div>
                         </div>
                         <div className="community-line">
                             <div className="community-item">
-                                <img src="" alt="" />
+                                <FaMediumM/>
                                 <span> Medium </span>
                             </div>
                             <div className="community-item">
-                                <img src="" alt="" />
+                                 <SiDiscord/>
                                 <span> Discord </span>
                             </div>
                             <div className="community-item">
-                                <img src="" alt="" />
+                                <FaTelegramPlane/>
                                 <span> Telegram </span>
                             </div>
                         </div>

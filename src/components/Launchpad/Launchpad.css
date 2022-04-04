@@ -249,12 +249,18 @@
 
 .ido-with-whitelist {
     display: flex;
-    justify-content: space-between;
-    text-decoration: none;
+    justify-content: center;
+    
+    
+    
 }
-
+.ido-btn-white-list {
+    color: #fff;
+}
 .ido-btn-detail {
-    text-decoration: none;
+   width: 120px;
+   justify-content: center;
+   text-align: center;
     height: auto;
     padding: 10px 16px;
     border-radius: 8px;

@@ -120,7 +120,7 @@ const Launchpad = () => {
                   </div>
                   <div className="button-div">
                     <div className="ido-with-whitelist">
-                      <div className="ido-btn-detail shake-shake linear-btn">
+                      <div className="ido-btn-detail linear-btn">
                         <Link to="/details" style={{ textDecoration: 'none' }}>
                         <div className="ido-btn-white-list"> Details </div>
                         </Link>
