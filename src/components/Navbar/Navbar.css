@@ -24,7 +24,7 @@
 }
 
 .header-left-logo {
-    width: 60px;
+    width: 120px;
     cursor: pointer;
 }
 
@@ -85,3 +85,17 @@
     cursor: pointer;
     position: relative;
     margin-right: 22px; */
+
+/* @media screen and (max-width: 1000px) {
+    .header {
+        height: 1.03rem;
+        box-shadow: 0 0.03rem 0.06rem 0 #1b1c30;
+    }
+    .header-container {
+        padding: 0 0.2rem;
+        max-width: 7.5rem;
+    }
+    .header-left-logo {
+        width: 1.45rem;
+    }
+} */

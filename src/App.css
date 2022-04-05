@@ -6,4 +6,12 @@
   /* background-color: #071C2D; */
 }
 
+@media screen and (max-width: 750px) {
+  #root {
+    width: auto;
+    margin: 0;
+  }
+  
+}
+
 

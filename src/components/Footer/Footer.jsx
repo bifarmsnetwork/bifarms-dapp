@@ -52,7 +52,7 @@ const Footer = () => {
                 <div>
                 <div className="contact-us">
                             <img src={Logo} alt="" />
-                            <div className="contact"> Contact us: contactbifarms@gmail.com</div>
+                            <div className="contact"> Contact us: contact@bifarms.network</div>
                         
 
                     </div>

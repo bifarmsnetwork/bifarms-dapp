@@ -131,3 +131,27 @@
     color: #9a9ab4;
     margin: 0 10px;
 }
+
+@media screen and (max-width:750px) {
+    .footer {
+        padding: 10px 20px ;
+        /* justify-content: space-around; */
+    }
+
+    .community-item {
+        width: 80px;
+    }
+    .community-item span {
+        display: none;
+    }
+
+    .contact-us {
+        height: 60px;
+        /* margin: auto 50px; */
+    }
+    .contact {
+        padding-left: 60px ;
+        justify-content: center;
+        align-items: center;
+    }
+}
