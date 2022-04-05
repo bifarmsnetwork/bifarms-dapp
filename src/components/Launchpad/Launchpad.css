@@ -1,5 +1,21 @@
+.el-main {
+    
+        box-sizing: border-box;
+        display: block;
+        flex: 1;
+        flex-basis: auto;
+        overflow: auto;
+        width: 100%;
+        padding: 80px 0 0;
+        position: relative;
+        min-height: calc(100vh - 255px);
+        background-color: #09162E;
+
+}
+
 .ido {
     display: block;
+    min-width: auto;
 }
 
 .tabs-container {
@@ -273,7 +289,24 @@
 }
 
 
-@media screen and (max-width:700px) {
+@media (max-width: 484px) {
+    .ido {
+        display: block;
+        width: 400px;
+    }
+    .el-main {
+        width: 125%;
+    }
+    .item {
+        margin: auto;
+    }
+    
+}
+
+
+
+
+/* @media screen and (max-width:700px) {
     .ido {
         display: block;
     }
@@ -285,4 +318,4 @@
         align-self: center;
         justify-content: center;
     }
-}
+} */
