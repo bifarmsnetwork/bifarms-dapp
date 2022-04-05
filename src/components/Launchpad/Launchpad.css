@@ -1,5 +1,5 @@
 .ido {
-    
+    display: block;
 }
 
 .tabs-container {
@@ -273,4 +273,13 @@
 }
 
 
-
+@media screen and (max-width:700px) {
+    .ido {
+        display: block;
+    }
+    .item {
+        margin: auto;
+        align-self: center;
+        justify-content: center;
+    }
+}
