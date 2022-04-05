@@ -2,6 +2,7 @@ import React from 'react';
 import { FaMediumM , FaTelegramPlane } from 'react-icons/fa';
 import { FiTwitter , FiGithub } from 'react-icons/fi';
 import { SiDiscord } from 'react-icons/si';
+import Logo from '../../images/logo.png';
 
 import './Footer.css';
 
@@ -45,10 +46,14 @@ const Footer = () => {
                                 <span> Telegram </span>
                             </div>
                         </div>
-                        <div className="contact-us">
-                            <img src="" alt="" />
-                            <div className="contact"> Contact us: contactbifarms@gmail.com</div>
                         </div>
+                       
+                </div>
+                <div>
+                <div className="contact-us">
+                            <img src={Logo} alt="" />
+                            <div className="contact"> Contact us: contactbifarms@gmail.com</div>
+                        
 
                     </div>
                 </div>

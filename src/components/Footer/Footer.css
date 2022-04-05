@@ -36,6 +36,27 @@
     display: flex;
     justify-content: start;
     align-items: center;
+    margin-bottom: 23px;
+}
+
+.community-item {
+    cursor: pointer;
+    width: 132px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+    color: #9a9ab4;
+    text-shadow: 0 1px 1px #151624;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.community-item svg {
+    margin-right: 7px;
+    width: 26px;
+    height: 26px;
+    font-size: 26px;
 }
 
 .community-item span{
@@ -63,11 +84,22 @@
     margin-bottom: 23px;
 }
 
+.community {
+    margin-top: 28px;
+}
+
+
+
 .contact-us {
     height: 140px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.contact-us img {
+    width: 91px;
+    align-self: flex-end;
 }
 
 .contact {
