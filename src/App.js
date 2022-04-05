@@ -10,11 +10,11 @@ const App = () => {
   return (
     <BrowserRouter>
     <Navbar/>
-    {/* <Routes>
+    <Routes>
       <Route path="/" element = {<Launchpad/>}/>
       <Route path="/details" element = {<Details/>}/>
-    </Routes> */}
-    {/* <Footer/> */}
+    </Routes>
+    <Footer/>
     
     </BrowserRouter>
 
