@@ -155,3 +155,24 @@
         align-items: center;
     }
 }
+
+
+
+@media (max-width:1027px) {
+    .item{
+        margin-left: 75px;
+    }
+}
+
+@media (max-width:566px) {
+    
+    .el-footer{
+        width: 177%;
+    }
+    .footer{
+        padding: 20px 20px;
+    }
+    .footer-container{
+        flex-direction: column-reverse;
+    }
+}
