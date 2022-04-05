@@ -277,6 +277,9 @@
     .ido {
         display: block;
     }
+    .tabs-container {
+        margin: 0 auto;
+    }
     .item {
         margin: auto;
         align-self: center;
