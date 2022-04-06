@@ -22,6 +22,7 @@ const Navbar = () => {
                 </div>
                 
             </div>
+            <div className="navNarrow"></div>
         </div>
     </div>
   )

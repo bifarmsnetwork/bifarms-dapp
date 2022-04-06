@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="el-footer">
         <div className="footer">
             <div className="footer-container">
-                <div>
+                <div className='footerDiv'>
                     <p className="title"> Help <span></span> </p>
                     <ul>
                         <li> FAQ </li>
@@ -19,7 +19,7 @@ const Footer = () => {
                     </ul>
                     
                 </div>
-                <div>
+                <div className='footerDiv'>
                     <p className="title"> Social <span></span></p>
                     <div className="community pc-community">
                         <div className="community-line">
@@ -46,17 +46,47 @@ const Footer = () => {
                                 <span> Telegram </span>
                             </div>
                         </div>
-                        </div>
+                    </div>
+                    
+                    
+                    <div className="community h5-community">
+                        
+                            <div className="community-item">
+                                <img src="https://bifarms.network/img/twitter.png" alt="" className="src" />
+                                
+                            </div>
+                            <div className="community-item">
+                                <img src="https://bifarms.network/img/github.png" alt="" className="src" />
+                               
+                            </div>
+                        
+                        
+                            <div className="community-item">
+                                <img src="https://bifarms.network/img/medium.png" alt="" className="src" />
+                               
+                            </div>
+                            <div className="community-item">
+                                 <img src="https://bifarms.network/img/discord.png" alt="" className="src" />
+                                
+                            </div>
+                            <div className="community-item">
+                                <img src="https://bifarms.network/img/telegram.png" alt="" className="src" />
+                                
+                            </div>
+                        
+                    </div>
+
+                    
                        
                 </div>
-                <div>
-                <div className="contact-us">
+                <div className="footerDiv contact-us">
                             <img src={Logo} alt="" />
                             <div className="contact"> Contact us: contact@bifarms.network</div>
                         
 
                     </div>
-                </div>
+                
+                
             </div>
             <div className="downDiv">
                 <div>

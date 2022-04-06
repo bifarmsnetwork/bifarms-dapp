@@ -9,7 +9,8 @@
         padding: 80px 0 0;
         position: relative;
         min-height: calc(100vh - 255px);
-        background-color: #09162E;
+        background-color: #09162e;
+        overflow: auto;
 
 }
 
@@ -72,7 +73,7 @@
 
 .item {
     width: 310px;
-    background-color: #071c2d;
+    background-color: #0e1c37;
     border-radius: 23px;
     box-shadow: 10px 10px 10px 10px #03111c;
     margin-bottom: 60px;
@@ -297,9 +298,7 @@
 
 @media (max-width:677px) {
     
-    .el-main{
-        width: 177%;
-    }
+   
     .tab-pan{
         min-width: 109px
     }

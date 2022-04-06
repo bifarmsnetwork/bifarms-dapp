@@ -3,7 +3,8 @@
     display: flex;
     align-items: center;
     height: 80px;
-    background-color: #071c2d;
+    background-color: #09162e;
+    overflow: auto;
     
 }
 
@@ -23,6 +24,9 @@
     height: 90px;
 }
 
+
+
+
 .header-left-logo {
     width: 120px;
     cursor: pointer;
@@ -32,6 +36,13 @@
     display: flex;
     align-items: center;
     justify-content: start;
+}
+
+
+@media (max-width: 659px) {
+    .nav{
+        display: none;
+    }
 }
 
 .n-item {
@@ -104,7 +115,7 @@
 
 @media (max-width:677px) {
     .header{
-        width: 177%;
+        width: 100%;
     }
     
 }
@@ -119,12 +130,13 @@
 }
 
 
-@media (max-width:484px) {
-    .downDiv{
-        display: flex;
-        flex-direction: column;
-    }
+
+
+
+
+
+
+.navNarrow {
+    display: none;
 }
-
-
 
