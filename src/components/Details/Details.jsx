@@ -156,7 +156,7 @@ This provides a huge advantage over attempting to do this manually yourself. BiF
             </div>
             <div className="harvestDesc"></div>
           </div>
-          {/* <div className="ido-container-right">
+          <div className="ido-container-right">
             <div className="left">
               <img src={Logo} alt="" className="logo windmill" />
               <div>
@@ -193,7 +193,7 @@ This provides a huge advantage over attempting to do this manually yourself. BiF
               </div>
 
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
       </div>
