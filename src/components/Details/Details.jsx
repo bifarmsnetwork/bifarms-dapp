@@ -163,7 +163,7 @@ This provides a huge advantage over attempting to do this manually yourself. BiF
                 <p className="ido-name"> Bifarms </p>
                 <div className="ido-tags">
                   <div className="status">
-                    <span> Ended </span>
+                    <span> Upcoming </span>
                   </div>
                   <div className="chain-info">
                     <img src="" alt="" />
