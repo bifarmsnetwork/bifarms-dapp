@@ -42,6 +42,7 @@
     text-align: left;
     color: #9999b3;
     cursor: pointer;
+    margin-left: 25px;
 }
 
 .ido-container {
@@ -232,10 +233,16 @@
 
 }
 
-.right {
 
+
+
+.ido-container .ido-container-left .item .item-top>div:first-child .ido-name {
+    font-size: 20px;
+    font-family: Microsoft YaHei,Microsoft YaHei-Bold;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 1px 1px #1b1b31;
+    width: 400px;
+    line-height: 40px;
 }
 
-.top-div {
-
-}

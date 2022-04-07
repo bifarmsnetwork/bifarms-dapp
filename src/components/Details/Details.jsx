@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Details.css";
+import "../Launchpad/Launchpad.css";
 import Logo from '../../images/coin.png';
 
 const Details = () => {
@@ -13,10 +14,8 @@ const Details = () => {
       <div className="ido-detail">
         <div className="back">
           <div className="back-container">
-            <Link to="/" style={{ textDecoration: 'none' }}>
-            <span>
-              <i className="icon el-icon-arrow-left"></i>
-              Back
+            <Link to="/" style={{ textDecoration: 'none', color: '#9999b3' }}>
+            <span>&#32;&#60;&#32;Back
             </span>
             </Link>
            
@@ -36,15 +35,10 @@ const Details = () => {
                 </div>
               </div>
               <div className="ido-desc line4hidden">
-                BiFarms is a Decentralized, Multi-Chain Yield Optimizer that
-                focuses high yield on crypto assets & All In One Tierless
-                Launchpad. BiFarms is a DeFi platform that allows its users to
-                earn compound interest on their crypto holdings. Through a set
-                of investment strategies secured and enforced by smart
-                contracts, BiFARMS network automatically maximizes the user
-                rewards from various liquidity pools (LPs),‌ ‌automated market
-                making (AMM) projects, and‌ other yield‌ farming
-                ‌opportunities in the DeFi ecosystem.
+              BiFarms is a Decentralized, Multi-Chain Yield Optimizer that focuses high yield on crypto assets & All In One Tierless Launchpad.
+BiFarms is a DeFi platform that allows its users to earn compound interest on their crypto holdings. Through a set of investment strategies secured and 
+enforced by smart contracts, BiFARMS network automatically maximizes the user rewards from various liquidity pools (LPs),‌ ‌automated market making (AMM) projects,‌ ‌and‌ 
+‌other yield‌ farming ‌opportunities in the DeFi ecosystem.
               </div>
             </div>
             <div className="ido-links">
@@ -86,7 +80,7 @@ const Details = () => {
               </div>
               <div className="hart-cap item-column">
                 <div className="cap-title column-title"> Hard Cap</div>
-                <div className="cap-value column-value"> 50000 BFM </div>
+                <div className="cap-value column-value"> 50,000 BFM </div>
               </div>
             </div>
             <div className="supported-coin item-column">
@@ -96,18 +90,36 @@ const Details = () => {
                 <span> 1 BFM = 5.00 BUSD / 1 BUSD = 0.20 BFM</span>
               </div>
             </div>
+            
+            
+            <div className="supported-coin item-column">
+              <div className="coin-title column-title"> Token Address </div>
+              {/* <div className="unit"> BUSD </div> */}
+              <div className="exchange-rate column-value">
+                <span> 0xbbf8c8f9b79808be0bc8d24f2c7a5111b47e230b</span>
+              </div>
+            </div>
             <div className="item-column">
               <div className="column-title"> Lock-up rules </div>
               <div className="column-value">
-                Allocation: 500-25000 BUSD
+                <span style={{lineHeight: '1.5px'}}>Allocation: 500-25,000 BUSD
                 <br />
                 Vesting time and rules:
                 <br />
                 Seed Round - 10% unlocked at TGE, cliff 2 months. 
                 <br />
-                The rest 90% will be unlocked monthly in the next 15 months.
+                The rest 90% will be unlocked monthly in the next 15 months.</span>
               </div>
             </div>
+
+            <div className="supported-coin item-column">
+              <div className="coin-title column-title"> Team Brief: </div>
+              {/* <div className="unit"> BUSD </div> */}
+              <div className="exchange-rate column-value">
+                <span> https://bifarmsnetwork-1.gitbook.io/bifarms/team/team</span>
+              </div>
+            </div>
+
             <div className="item-column">
               <div className="column-title"> Project Introduction </div>
               <div className="column-value">
@@ -126,16 +138,18 @@ This provides a huge advantage over attempting to do this manually yourself. BiF
                 <br />
                 Ticker: BFM
                 <br />
-                Total supply: 1000000
+                Total supply: 1,000,000(fixed)
                 <br />
-                Initial circulating supply: 52000 BFM
+                Initial circulating supply: 52,000 BFM
                 <br />
-                Initial market cap: $520000 USD 
+                Initial Circulating market cap: $520,000
                 <br />
-                Precise Emission Type: Burn & Mint Equilibrium, Programmatic
-                Burn
+                Fully diluted market cap: $10,000,000
                 <br />
-                Capped Supply: Yes
+                <br />
+                DEX Listing: Pancakeswap
+                <br />
+                CEX Listing: BitMart, BKEX, BiBox, LBANK, gate.io, MEXC Global
                 <br />
                 <br />
               </div>
