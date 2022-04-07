@@ -66,7 +66,7 @@ const Footer = () => {
                                
                             </div>
                             <div className="community-item">
-                                 <img src="https://bifarms.network/img/discord.png" alt="" className="src" />
+                                 <img src="https://bifarms.network/img/docs.png" alt="" className="src" />
                                 
                             </div>
                             <div className="community-item">

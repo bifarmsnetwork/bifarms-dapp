@@ -69,6 +69,7 @@
     flex-wrap: wrap;
     margin: 69px auto 0;
     padding-bottom: 43px;
+    
 }
 
 .item {
@@ -293,6 +294,9 @@
 @media (max-width:1027px) {
     .item{
         margin-left: 75px;
+    }
+    .list{
+        overflow: hidden;
     }
 }
 
