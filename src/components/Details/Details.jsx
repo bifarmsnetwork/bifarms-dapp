@@ -189,6 +189,9 @@ This provides a huge advantage over attempting to do this manually yourself. BiF
 
                     </div>
                   </div>
+                  <div className="approve">
+                    Approve
+                  </div>
                 </div>
               </div>
 
