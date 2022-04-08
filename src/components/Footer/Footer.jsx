@@ -38,7 +38,7 @@ const Footer = () => {
                                 <span> Medium </span>
                             </div>
                             <div className="community-item">
-                                 <SiGitbook/>
+                                 <SiDiscord/>
                                 <span> Discord </span>
                             </div>
                             <div className="community-item">

@@ -71,7 +71,7 @@ const Launchpad = () => {
                           {/* <div className="perch">
                             <div className="perch-center"></div>
                           </div> */}
-                          03.28 09.00 2022 UTC
+                          10.04 09.00 AM UTC
                         </div>
                         <div className="end-time time">
                           {/* <div className="perch">
