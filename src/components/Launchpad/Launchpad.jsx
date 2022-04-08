@@ -16,11 +16,11 @@ const Launchpad = () => {
       <div className="ido">
       <div className="tabs-container">
         <div className="tabs">
-          <div className={toggleState === 1 ? "tab-pan is-active" : "tab-pan"} onClick={() => toggleTab(1)}>Live[1]</div>
+          <div className={toggleState === 1 ? "tab-pan is-active" : "tab-pan"} onClick={() => toggleTab(1)}>Live [1]</div>
           <div className="line-perch"></div>
-          <div className={toggleState === 2 ? "tab-pan is-active" : "tab-pan"} onClick={() => toggleTab(2)}>Upcoming[0]</div>
+          <div className={toggleState === 2 ? "tab-pan is-active" : "tab-pan"} onClick={() => toggleTab(2)}>Upcoming [0]</div>
           <div className="line-perch"></div>
-          <div className={toggleState === 3 ? "tab-pan is-active" : "tab-pan"} onClick={() => toggleTab(3)}>Ended[0]</div>
+          <div className={toggleState === 3 ? "tab-pan is-active" : "tab-pan"} onClick={() => toggleTab(3)}>Ended [0]</div>
         </div>
         </div>
         <div className="list">
@@ -33,14 +33,14 @@ const Launchpad = () => {
                   alt="logo"
                   className="logo"
                 />
-                {/* <div className="chain-info">
+                 <div className="chain-info">
                   <img
                     src="https://static.erax.io/app/images/chain/BSC.png"
                     alt=""
                     className="chain-logo"
                   />
                   <div className="chain-name">BSC</div>
-                </div> */}
+                </div> 
               </div>
               <div className="right">
                 <div className="top-div">
@@ -59,7 +59,7 @@ const Launchpad = () => {
                       <div className="amount-title"> Soft/Hard Cap</div>
                       <div className="amount-value">
                         <span>0 BFS - </span>
-                        <span>100,000 BFS</span>
+                        <span>50,000 BFS</span>
                       </div>
                     </div>
                   </div>
@@ -71,7 +71,7 @@ const Launchpad = () => {
                           {/* <div className="perch">
                             <div className="perch-center"></div>
                           </div> */}
-                          10.04 09.00 AM UTC
+                          10.04.2022 09.00 AM UTC
                         </div>
                         <div className="end-time time">
                           {/* <div className="perch">

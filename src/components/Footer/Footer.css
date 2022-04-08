@@ -17,7 +17,7 @@
     flex-wrap: wrap;
 }
 
-.title {
+.title1 {
     position: relative;
     color: #e5e5e5;
     font-size: 16px;
@@ -25,14 +25,36 @@
     text-shadow: 0 1px 1px #151624;
 }
 
-.title span {
+
+.title2 {
+    position: relative;
+    color: #e5e5e5;
+    font-size: 16px;
+    font-weight: 700;
+    text-shadow: 0 1px 1px #151624;
+}
+
+.title1 span {
     display: block;
-    width: 35px;
+    width: 45px;
     height: 2px;
     border-radius: 1px;
     margin-top: 8px;
-    background: white;
+    background: #10a3d7;
 }
+
+.title2 span {
+    display: block;
+    width: 55px;
+    height: 2px;
+    border-radius: 1px;
+    margin-top: 8px;
+    background: #10a3d7;
+}
+
+
+
+
 
 .community-line {
     display: flex;
@@ -131,7 +153,7 @@
 }
 
 .contact-us img {
-    width: 91px;
+    width: 197px;
     align-self: flex-end;
 }
 
@@ -147,13 +169,22 @@
         height: auto;
         padding: 0.91rem 0 0;
     }
+    .contact{
+        margin-bottom: 30px;
+    }
 
     .footerDiv {
         width: 100%;
         text-align: center;
         margin-top: 0;
+        margin-bottom: 30px;
     }
-    .title span{
+    .title1 span{
+        margin: 0.25rem auto 0;
+    }
+    
+    
+    .title2 span{
         margin: 0.25rem auto 0;
     }
    
@@ -226,7 +257,38 @@
 
     .footer .downDiv span {
         display: block;
+        margin: 8px auto;
     }
+
+    .contact-us img {
+        width: 165px;
+        /* align-self: flex-end; */
+        margin-top: 42px;
+    }
+
+    .footer .footer-container .community .community-item {
+        cursor: pointer;
+        margin-right: 0.25rem;
+        margin-left: 0.25rem;
+        height: 1.7rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: relative;
+        width: 50px;
+        justify-content: center;
+        
+    }
+    .footer .footer-container .community .community-item img {
+        width: 2rem;
+        border-radius: 50%;
+    }
+
+
+    
 }
 
 
@@ -243,3 +305,8 @@
     margin-right: 0;
 }
 
+
+
+.link-class{
+    display: none;
+}
