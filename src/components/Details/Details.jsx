@@ -85,7 +85,7 @@ enforced by smart contracts, BiFARMS network automatically maximizes the user re
             </div>
             <div className="supported-coin item-column">
               <div className="coin-title column-title"> Supported Coin </div>
-              {/* <div className="unit"> BUSD </div> */}
+              <div className="theme_color"> BUSD </div>
               <div className="exchange-rate column-value">
                 <span> 1 BFM = 5.00 BUSD / 1 BUSD = 0.20 BFM</span>
               </div>
@@ -96,7 +96,7 @@ enforced by smart contracts, BiFARMS network automatically maximizes the user re
               <div className="coin-title column-title"> Token Address </div>
               {/* <div className="unit"> BUSD </div> */}
               <div className="exchange-rate column-value">
-                <span> 0xbbf8c8f9b79808be0bc8d24f2c7a5111b47e230b</span>
+                <span className="theme_color"> 0xbbf8c8f9b79808be0bc8d24f2c7a5111b47e230b</span>
               </div>
             </div>
             <div className="item-column">
@@ -132,7 +132,7 @@ This provides a huge advantage over attempting to do this manually yourself. BiF
 
                 <br />
                 <br />
-                Token information [Deflationary]
+                Token information
                 <br />
                 Type: BEP20
                 <br />
@@ -147,9 +147,9 @@ This provides a huge advantage over attempting to do this manually yourself. BiF
                 Fully diluted market cap: $10,000,000
                 <br />
                 <br />
-                DEX Listing: Pancakeswap
+                <span className="text_white">DEX Listing:</span> Pancakeswap
                 <br />
-                CEX Listing: BitMart, BKEX, BiBox, LBANK, gate.io, MEXC Global
+                <span className="text_white">CEX Listing:</span> BitMart, BKEX, BiBox, LBANK, gate.io, MEXC Global
                 <br />
                 <br />
               </div>

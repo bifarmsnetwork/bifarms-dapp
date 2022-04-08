@@ -76,11 +76,15 @@
     width: 310px;
     background-color: #0e1c37;
     border-radius: 23px;
-    box-shadow: 10px 10px 10px 10px #03111c;
+    /* box-shadow: 10px 10px 10px 10px #03111c; */
     margin-bottom: 60px;
     margin-right: 35px;
     transition: all .3s ease-in-out;
+    border: 0.5px solid grey;
 }
+
+
+
 
 .no-item {
     display: none;
