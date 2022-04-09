@@ -1,7 +1,8 @@
 import React from 'react';
 import { FaMediumM , FaTelegramPlane } from 'react-icons/fa';
 import { FiTwitter , FiGithub } from 'react-icons/fi';
-import { SiDiscord } from 'react-icons/si';
+import { SiGitbook } from "react-icons/si";
+// import { SiDiscord } from 'react-icons/si';
 import Logo from '../../images/logo.png';
 
 import './Footer.css';
@@ -11,16 +12,16 @@ const Footer = () => {
     <div className="el-footer">
         <div className="footer">
             <div className="footer-container">
-                <div>
-                    <p className="title"> Help <span></span> </p>
+                <div className='footerDiv'>
+                    <p className="title1"> Help <span></span> </p>
                     <ul>
-                        <li> FAQ </li>
+                        <li style={{display: 'none'}}> FAQ </li>
                         <li> How to participate </li>
                     </ul>
                     
                 </div>
-                <div>
-                    <p className="title"> Social <span></span></p>
+                <div className='footerDiv'>
+                    <p className="title2"> Social <span></span></p>
                     <div className="community pc-community">
                         <div className="community-line">
                             <div className="community-item">
@@ -28,9 +29,10 @@ const Footer = () => {
                                 <span> Twitter </span>
                             </div>
                             <div className="community-item">
-                                <FiGithub/>
-                                <span> Github </span>
+                                <FaTelegramPlane/>
+                                <span> Telegram </span>
                             </div>
+                            
                         </div>
                         <div className="community-line">
                             <div className="community-item">
@@ -38,29 +40,58 @@ const Footer = () => {
                                 <span> Medium </span>
                             </div>
                             <div className="community-item">
-                                 <SiDiscord/>
-                                <span> Discord </span>
+                                 <SiGitbook/>
+                                <span> Docs </span>
                             </div>
                             <div className="community-item">
-                                <FaTelegramPlane/>
-                                <span> Telegram </span>
+                                <FiGithub/>
+                                <span> Github </span>
                             </div>
+                            
+                            
                         </div>
-                        </div>
+                    </div>
+                    
+                    
+                    <div className="community h5-community">
+                        
+                            <div className="community-item">
+                                <img src="https://bifarms.network/img/twitter.png" alt="" className="src" />
+                                
+                            </div>
+                            <div className="community-item">
+                                <img src="https://bifarms.network/img/telegram.png" alt="" className="src" />
+                                
+                            </div>
+                            <div className="community-item">
+                                <img src="https://bifarms.network/img/medium.png" alt="" className="src" />
+                               
+                            </div>
+                            <div className="community-item">
+                                 <img src="https://bifarms.network/img/docs.png" alt="" className="src" />
+                                
+                            </div>
+                            <div className="community-item">
+                                <img src="https://bifarms.network/img/github.png" alt="" className="src" />
+                               
+                            </div>
+                    </div>
+
+                    
                        
                 </div>
-                <div>
-                <div className="contact-us">
+                <div className="footerDiv contact-us">
                             <img src={Logo} alt="" />
                             <div className="contact"> Contact us: contact@bifarms.network</div>
                         
 
                     </div>
-                </div>
+                
+                
             </div>
             <div className="downDiv">
                 <div>
-                    <span> Copyright @ 2022 . Bifarms Network All rights reserved</span>
+                    <span> Copyright @ 2022 . BiFarms Network All rights reserved</span>
                 </div>
                 <div>
                     <span>

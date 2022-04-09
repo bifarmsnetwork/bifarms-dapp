@@ -42,6 +42,7 @@
     text-align: left;
     color: #9999b3;
     cursor: pointer;
+    margin-left: 25px;
 }
 
 .ido-container {
@@ -218,7 +219,7 @@
     align-items: center;
     padding: 0 10px;
     font-size: 12px;
-    background: #33334b;
+    background: transparent;
     margin: 14px;
 
 
@@ -232,10 +233,40 @@
 
 }
 
-.right {
+.approve {
+    height: 52px;
+    line-height: 52px;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    background-image: linear-gradient(180deg , #10a3d7 , #2669f5);
 
 }
 
-.top-div {
 
+
+
+.ido-container .ido-container-left .item .item-top>div:first-child .ido-name {
+    font-size: 20px;
+    font-family: Microsoft YaHei,Microsoft YaHei-Bold;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 1px 1px #1b1b31;
+    width: 400px;
+    line-height: 40px;
+}
+
+
+.text_white{
+    color: #fff;
+}
+
+
+
+.theme_color{
+    color: #0c9fd4;
 }

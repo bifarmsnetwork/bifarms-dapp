@@ -9,7 +9,8 @@
         padding: 80px 0 0;
         position: relative;
         min-height: calc(100vh - 255px);
-        background-color: #09162E;
+        background-color: #09162e;
+        overflow: auto;
 
 }
 
@@ -44,6 +45,7 @@
     font-weight: 700;
     text-align: center;
     cursor: pointer;
+    letter-spacing: 1.4px;
 }
 
 .is-active {
@@ -68,17 +70,24 @@
     flex-wrap: wrap;
     margin: 69px auto 0;
     padding-bottom: 43px;
+    
 }
 
 .item {
     width: 310px;
-    background-color: #071c2d;
+    background-color: #0e1c37;
     border-radius: 23px;
-    box-shadow: 10px 10px 10px 10px #03111c;
+    /* box-shadow: 10px 10px 10px 10px #03111c; */
     margin-bottom: 60px;
     margin-right: 35px;
     transition: all .3s ease-in-out;
+    border: 0.5px solid rgb(128,128,128,0.2);
+    transition: all .3s ease-in-out;
+    /* box-shadow: 0 10px 8px 0 #09162e; */
 }
+
+
+
 
 .no-item {
     display: none;
@@ -124,6 +133,7 @@
     justify-content: center;
     font-size: 12px;
     font-weight: 400;
+    padding-left: 106px;
 
 }
 .chain-logo {
@@ -137,8 +147,9 @@
     font-weight: 400;
     color: #fff;
     padding: 5px 13px;
-    background-color: #33334b;
+    /* background-color: #33334b; */
     border-radius: 11px;
+    border: 0.5px solid rgb(128,128,128,0.2);
 }
 
 .right {
@@ -257,6 +268,8 @@
 
 .ido-time {
     color: #73738d;
+    margin-top: 13px;
+    font-size: 15px;
 }
 
 .button-div {
@@ -274,7 +287,7 @@
     color: #fff;
 }
 .ido-btn-detail {
-   width: 120px;
+   width: 250px;
    justify-content: center;
    text-align: center;
     height: auto;
@@ -285,37 +298,36 @@
     font-weight: 500;
     border: 0 #000;
     color: #fff;
-    background-image: linear-gradient(180deg , #2669f5 , #2669f5);
+    background-image: linear-gradient(180deg , #10a3d7 , #2669f5);
 }
 
 
-@media (max-width: 484px) {
-    .ido {
-        display: block;
-        width: 400px;
+@media (max-width:1027px) {
+    .item{
+        margin-left: 75px;
     }
-    .el-main {
-        width: 125%;
+    .list{
+        overflow: hidden;
     }
-    .item {
-        margin: auto;
-    }
+}
+
+@media (max-width:677px) {
     
+   
+    .tab-pan{
+        min-width: 96px
+    }
+    .item{
+        margin: 10px auto;
+    }
+    .empty-item{
+        margin: 5px auto;
+        padding-left: 59px;
+    }
+   
 }
 
 
-
-
-/* @media screen and (max-width:700px) {
-    .ido {
-        display: block;
-    }
-    .tabs-container {
-        margin: 0 auto;
-    }
-    .item {
-        margin: auto;
-        align-self: center;
-        justify-content: center;
-    }
-} */
+.end-time{
+    display: none;
+}
