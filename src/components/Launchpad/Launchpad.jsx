@@ -1,15 +1,39 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Coin from "../../images/coin.png";
 import "./Launchpad.css";
+import modal,{web3Modal} from "../../modal";
+import { seedABI } from "../../abi";
+import {ethers} from 'ethers'
+import {address} from '../../address'
 
 const Launchpad = () => {
+  // let address = "0x1868819e052D2daA9a9e770AdB9e175188343971"
   const [toggleState , setToggleState] = useState(1);
+  // const [contract,setContract] = useState()
+  const [deposit,setDeposit] = useState(0)
 
   const toggleTab = (index) => {
     setToggleState(index);
   }
 
+  useEffect(()=>{
+    async function handleContract(){
+      let provider = await modal()
+      let contract = new ethers.Contract(address, seedABI,provider)
+      console.log(contract)
+      // setContract(contract)
+      let deposit = await contract.totalDeposit()
+      deposit = deposit.toString()
+      // console.log(ethers.utils.formatUnits(deposit,18))
+      setDeposit(parseInt(ethers.utils.formatUnits(deposit,18)))
+    }
+    handleContract()
+  },[address])
+
+  // console.log(deposit)
+  
+  // let contract = new ethers.contract(address,seedABI,provider)
   return (
      <>
      <div className="el-main">
@@ -88,7 +112,7 @@ const Launchpad = () => {
                       <div className="amount-title">Progress</div>
                       <div className="amount-value">
                         <div className="progress-desc">
-                          <span> 0 BUSD </span>
+                          <span> {deposit} BUSD</span>
                           <span> 250,000 BUSD</span>
                         </div>
                         <div className="progress-plan progress-status2">
