@@ -74,7 +74,7 @@ const Launchpad = () => {
                       <div className="amount-title">Price</div>
                       <div className="amount-value">
                         {" "}
-                        1 BFS = 5.00 BUSD / 1 BUSD = 0.2 BSF
+                        1 BFS = 5.00 BUSD / 1 BUSD = 0.2 BFS
                       </div>
                     </div>
                   </div>
