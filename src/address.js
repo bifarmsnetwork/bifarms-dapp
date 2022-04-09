@@ -1,0 +1,2 @@
+export const token = "0xAC212351dC5E1d056D5a36E00A62BA748CbF694c"
+export const address = "0x1868819e052D2daA9a9e770AdB9e175188343971"
