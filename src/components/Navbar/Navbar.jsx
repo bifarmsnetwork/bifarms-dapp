@@ -28,7 +28,10 @@ const Navbar = () => {
       let provider = await modal();
       setProvider(provider);
       const accounts = await provider.listAccounts();
-      if (accounts) setAccount(accounts[0]);
+      if (accounts) {
+        setAccount(accounts[0]);
+        // window.location.reload();
+      }
     } catch (error) {
       console.error(error);
       setError(error);
@@ -43,6 +46,7 @@ const Navbar = () => {
       console.log("Wallet disconnect called");
       await web3Modal().clearCachedProvider();
       refreshState();
+      window.location.reload();
     } catch (error) {
       console.error(error);
     }

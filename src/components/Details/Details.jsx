@@ -3,46 +3,85 @@ import { Link } from "react-router-dom";
 import "./Details.css";
 import "../Launchpad/Launchpad.css";
 import Logo from "../../images/coin.png";
-import { approve,deposit,checkApprove } from "../../busd";
-import modal from '../../modal'
+import { approve, checkApprove,claimInitialToken,claimToken,checkDeposit,checkBalance } from "../../busd";
+import modal from "../../modal";
 
 const Details = () => {
-  const [status,setStatus] = useState(false)
- 
-  
-  
-  
- const handleCheckApprove = async () => {
+  const [status, setStatus] = useState(false);
+  const [value,setValue]  = useState(0)
+  const [deposit,setDeposit] = useState(0)
+  const [balance,setBalance] = useState(0)
+
+  const handleCheckApprove = async () => {
     let provider = await modal();
     const accounts = await provider.listAccounts();
     if (accounts) {
       let value = await checkApprove(accounts[0]);
       console.log(value.toString());
-      if(parseInt(value.toString())>0) setStatus(true)
-      else setStatus(false)
-      return status
+      if (parseInt(value.toString()) > 0) setStatus(true);
+      else setStatus(false);
+      return status;
     }
   };
 
-const handleApprove = async() => {
-  let bool = await handleCheckApprove()
-  console.log(bool)
-  if(!bool){
-    approve();
-  }
-  };
-  const handleDeposit=async()=>{
-    let bool = await handleCheckApprove()
-  console.log(bool)
-  if(bool){
-    // if(handleCheckApprove()){
-      deposit()
+  const handleApprove = async () => {
+    let bool = await handleCheckApprove();
+    console.log(bool);
+    if (!bool) {
+      approve();
     }
+  };
+  const handleDeposit = async () => {
+    let bool = await handleCheckApprove();
+    console.log(bool);
+    if (bool && value>=500) {
+      // if(handleCheckApprove()){
+      deposit(value);
+    }
+  };
+
+  const handleInitialClaim = async()=>{
+    let provider = await modal();
+    const accounts = await provider.listAccounts();
+   if(accounts) {
+     let result = await claimInitialToken(accounts[0])
+     console.log(result)
   }
- useEffect(() => {
+}
+  const handleClaim = async()=>{
+    let provider = await modal();
+    const accounts = await provider.listAccounts();
+   if(accounts) {
+      claimToken(accounts[0])
+    
+  }
+  }
+
+  const handlecheckDeposit = async()=>{
+    let provider = await modal();
+    const accounts = await provider.listAccounts();
+   if(accounts) {
+    let sum = await checkDeposit(accounts[0])
+    setDeposit(sum)
+   }
+  }
+
+  const handleBalance = async()=>{
+    let provider = await modal();
+    const accounts = await provider.listAccounts();
+   if(accounts) {
+    let sum = await checkBalance(accounts[0])
+    setBalance(sum)
+   }
+  }
+  
+  useEffect(() => {
     handleCheckApprove();
+    handlecheckDeposit()
+    handleBalance()
   });
- 
+
+  console.log(value)
 
   return (
     <>
@@ -244,11 +283,29 @@ const handleApprove = async() => {
                           </div>
                         </div>
                       </div>
-                      {status?<div className="approve" onClick={handleDeposit}>
-                        Deposit
-                      </div>:<div className="approve" onClick={handleApprove}>
-                        Approve
-                      </div>}
+                      <div>My subscription amount
+                        <div>{deposit}</div>
+                      </div>
+                      <div>Available
+                        <div>{balance}</div>
+                      </div>
+                      {status ? (
+                        <>
+                        <input type="text" placeholder="Enter deposit amount" value={value} onChange={e=>setValue(e.target.value)} />
+                        <div className="approve" onClick={handleDeposit}>
+                          Deposit
+                        </div>
+                        <div className="approve" onClick={handleInitialClaim}>
+                            Inital Claim
+                          </div>
+                        <div className="approve" onClick={handleClaim}>
+                            Claim
+                          </div></>
+                      ) : (
+                        <div className="approve" onClick={handleApprove}>
+                          Approve
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>

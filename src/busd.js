@@ -30,9 +30,54 @@ export const checkApprove = async(owner)=>{
     return result
 }
 
-export const deposit = async()=>{
+export const deposit = async(amount)=>{
     let cont = await contractSeed()
     console.log(cont)
-    let amount = "500"
-    await cont.deposit(ethers.utils.parseEther(amount))
+    await cont.deposit(ethers.utils.parseEther(amount.toString()))
+}
+
+export const claimInitialToken = async(owner)=>{
+    let cont = await contractSeed()
+    let details = await cont.claimDetails(owner)
+    // console.log(details[0].toString().split(','))
+    let arr = details[0].toString().split(',')
+    if(arr[0]==="0"){
+        return 'disabled'
+    }
+    else {
+        await cont.claimTokens(0)
+        return 'enabled'
+    }
+}
+
+export const claimToken = async(owner)=>{
+    let cont = await contractSeed()
+    //read clam details
+    let details = await cont.claimDetails(owner)
+    // console.log(details[0].toString().split(','))
+    let arr = details[0].toString().split(',')
+    let value =1
+    console.log(arr)
+    for(let i=1;i<arr.length;i++){
+        if(arr[i]==="0"){
+            value++
+        }else break;
+    }
+    console.log(value)
+    await cont.claimTokens(value) //value between 1 to 15
+}
+
+export const checkDeposit = async(owner)=>{
+    let cont = await contractSeed()
+    let deposits = await cont.viewDeposits(owner)
+    let sum = deposits[0].toString().split(',').map(ele=>ethers.utils.formatUnits(ele.toString(),18)).reduce((a,b)=>parseInt(a.toString())+parseInt(b.toString()))
+    // console.log(ethers.utils.formatUnits(sum.toString(),18))
+    console.log(sum)
+    return (sum)
+}
+
+export const checkBalance = async(owner)=>{
+    let cont = await contractBusd()
+    let balance = await cont.balanceOf(owner)
+    return ethers.utils.formatUnits(balance.toString(),18)
 }
