@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Coin from "../../images/coin.svg";
+import noItem from "../../images/no_item.png";
 import "./Launchpad.css";
 import modal,{web3Modal} from "../../modal";
 import { seedABI } from "../../abi";
@@ -51,7 +52,7 @@ const Launchpad = () => {
           {/* Item 1 */}
           <div className={toggleState === 1 ? "item" : "no-item"}>
             <div className="item-container">
-              <div className="left">
+              <div className="left" style={{flexDirection: 'row'}}>
                 <img
                   src={Coin}
                   alt="logo"
@@ -112,8 +113,8 @@ const Launchpad = () => {
                       <div className="amount-title">Progress</div>
                       <div className="amount-value">
                         <div className="progress-desc">
-                          <span> {deposit} BFS</span>
-                          <span> 50,000 BFS</span>
+                          <span> {deposit} BUSD</span>
+                          <span> 250,000 BUSD</span>
                         </div>
                         <div className="progress-plan progress-status2">
                           <div
@@ -164,13 +165,13 @@ const Launchpad = () => {
           {/* Item 1 End */}
           <div className={toggleState === 2 ? "empty-item" : "no-item"}>
             
-              <img src="https://cdn.jsdelivr.net/gh/eraxio/websource@2.5.11/pcsource/static/img/nomal-empty.02f45c2.png" />
+              <img src={noItem} style={{width: '85%'}} />
               <p>No data yet </p>
             
           </div>
           <div className={toggleState === 3 ? "empty-item" : "no-item"}>
             
-            <img src="https://cdn.jsdelivr.net/gh/eraxio/websource@2.5.11/pcsource/static/img/nomal-empty.02f45c2.png" />
+            <img src={noItem} style={{width: '85%'}}/>
             <p>No data yet </p>
           
         </div>

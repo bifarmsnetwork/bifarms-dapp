@@ -76,9 +76,9 @@
 }
 
 .ido-logo {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+    /* border-radius: 50%; */
     margin-right: 17px;
     background-color: #09162E;
 }
@@ -189,16 +189,18 @@
     justify-content: start;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: start;
+    align-items: center;
     margin-bottom: 29px;
+    align-items: center;
+    flex-direction: column;
 }
 
 .logo {
-    width: 49px;
-    height: 49px;
+    width: 129px;
+    height: 73px;
     border-radius: 50%;
     margin-right: 17px;
-    background: #fff;
+    background: transparent;
 
 }
 
@@ -216,11 +218,11 @@
     align-items: center;
     padding: 0 10px;
     font-size: 12px;
-    background-color: #09162E;
+    background-color: green;
     color: #fff;
 }
 
-.chain-info {
+/* .chain-info {
     line-height: 22px;
     border-radius: 4px;
     display: flex;
@@ -231,7 +233,7 @@
     margin: 14px;
 
 
-}
+} */
 
 .chain-name {
     color: #e9ebee;
@@ -242,8 +244,8 @@
 }
 
 .approve {
-    height: 52px;
-    line-height: 52px;
+    height: auto;
+    /* line-height: 52px; */
     border-radius: 9px;
     font-size: 16px;
     font-weight: 700;
@@ -252,10 +254,49 @@
     cursor: pointer;
     margin-top: 20px;
     background-image: linear-gradient(180deg , #10a3d7 , #2669f5);
+    padding: 10px 16px;
 
 }
 
 
+.claim {
+    height: auto;
+    /* line-height: 52px; */
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    background-image: linear-gradient(180deg , #10a3d7 , #2669f5);
+    width: 142px;
+    padding: 10px 16px;
+
+
+}
+
+
+.claim_box {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+@media (max-width: 1000px) {
+
+    .claim{
+        width: 164px;
+    }
+}
+
+
+@media (max-width: 440px) {
+
+    .claim{
+        width: 114px;
+    }
+}
 
 
 .ido-container .ido-container-left .item .item-top>div:first-child .ido-name {
@@ -327,4 +368,40 @@
 .amount_color{
     color:#9999b3;
 
+}
+
+
+.ct1-input input {
+    width: 305px;
+    height: auto;
+    background: transparent;
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+    color: #ddd;
+    border: 1px solid #ddd;
+    padding: 10px 16px;
+}
+
+
+
+
+
+@media (max-width: 1000px) {
+    .ct1-input input {
+        width: 357px;
+    }
+}
+
+
+@media (max-width: 440px) {
+    .ct1-input input {
+        width: 245px;
+    }
+}
+
+
+
+.ct1-input input:hover{
+    border: 1px solid #10a3d7;
 }

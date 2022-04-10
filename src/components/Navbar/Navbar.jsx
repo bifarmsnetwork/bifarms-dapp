@@ -97,12 +97,12 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/about" className="nav-link" onClick={closeMenu}>
+          <Link to="/" className="nav-link" onClick={closeMenu}>
             Farms
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/shop" className="nav-link" onClick={closeMenu}>
+          <Link to="/" className="nav-link" onClick={closeMenu}>
             Pool
           </Link>
         </li>

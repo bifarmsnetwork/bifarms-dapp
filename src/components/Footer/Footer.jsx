@@ -16,7 +16,7 @@ const Footer = () => {
                     <p className="title1"> Help <span></span> </p>
                     <ul>
                         <li style={{display: 'none'}}> FAQ </li>
-                        <li> How to participate </li>
+                        <li> <a href="https://bifarmsnetwork-1.gitbook.io/bifarms/guide/how-to-participate" target="_blank" className="href">How to participate</a> </li>
                     </ul>
                     
                 </div>
@@ -25,27 +25,27 @@ const Footer = () => {
                     <div className="community pc-community">
                         <div className="community-line">
                             <div className="community-item">
-                                <FiTwitter/>
-                                <span> Twitter </span>
+                            <a href="https://twitter.com/bifarmsnetwork" className="href" target="_blank"><FiTwitter/>
+                                <span> Twitter </span></a>
                             </div>
                             <div className="community-item">
-                                <FaTelegramPlane/>
-                                <span> Telegram </span>
+                            <a href="https://t.me/bifarmsnetwork" className="href" target="_blank"><FaTelegramPlane/>
+                                <span> Telegram </span></a>
                             </div>
                             
                         </div>
                         <div className="community-line">
                             <div className="community-item">
-                                <FaMediumM/>
-                                <span> Medium </span>
+                            <a href="https://medium.com/@bifarmsnetwork" className="href" target="_blank"><FaMediumM/>
+                                <span> Medium </span></a>
                             </div>
                             <div className="community-item">
-                                 <SiGitbook/>
-                                <span> Docs </span>
+                            <a href="https://bifarmsnetwork-1.gitbook.io/bifarms/" className="href" target="_blank"><SiGitbook/>
+                                <span> Docs </span></a>
                             </div>
                             <div className="community-item">
-                                <FiGithub/>
-                                <span> Github </span>
+                            <a href="https://github.com/bifarmsnetwork" className="href" target="_blank"><FiGithub/>
+                                <span> Github </span></a>
                             </div>
                             
                             
@@ -56,23 +56,23 @@ const Footer = () => {
                     <div className="community h5-community">
                         
                             <div className="community-item">
-                                <img src="https://bifarms.network/img/twitter.png" alt="" className="src" />
+                                <a href="https://twitter.com/bifarmsnetwork" className="href" target="_blank"><img src="https://bifarms.network/img/twitter.png" alt="" className="src" /></a>
                                 
                             </div>
                             <div className="community-item">
-                                <img src="https://bifarms.network/img/telegram.png" alt="" className="src" />
+                            <a href="https://t.me/bifarmsnetwork" className="href" target="_blank"><img src="https://bifarms.network/img/telegram.png" alt="" className="src" /></a>
                                 
                             </div>
                             <div className="community-item">
-                                <img src="https://bifarms.network/img/medium.png" alt="" className="src" />
+                            <a href="https://medium.com/@bifarmsnetwork" className="href" target="_blank"><img src="https://bifarms.network/img/medium.png" alt="" className="src" /></a>
                                
                             </div>
                             <div className="community-item">
-                                 <img src="https://bifarms.network/img/docs.png" alt="" className="src" />
+                            <a href="https://bifarmsnetwork-1.gitbook.io/bifarms/" className="href" target="_blank"><img src="https://bifarms.network/img/docs.png" alt="" className="src" /></a>
                                 
                             </div>
                             <div className="community-item">
-                                <img src="https://bifarms.network/img/github.png" alt="" className="src" />
+                            <a href="https://github.com/bifarmsnetwork" className="href" target="_blank"><img src="https://bifarms.network/img/github.png" alt="" className="src" /></a>
                                
                             </div>
                     </div>
@@ -82,7 +82,7 @@ const Footer = () => {
                 </div>
                 <div className="footerDiv contact-us">
                             <img src={Logo} alt="" />
-                            <div className="contact"> Contact us: contact@bifarms.network</div>
+                            <div className="contact"> Contact us: <a href="mailto:contact@bifarms.network" className="href">contact@bifarms.network</a></div>
                         
 
                     </div>

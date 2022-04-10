@@ -134,6 +134,7 @@
     font-size: 12px;
     font-weight: 400;
     padding-left: 106px;
+    align-items: center;
 
 }
 .chain-logo {
@@ -302,9 +303,9 @@
 }
 
 
-@media (max-width:1027px) {
+@media (max-width:1000px) {
     .item{
-        margin-left: 75px;
+        margin: 20px auto;
     }
     .list{
         overflow: hidden;
@@ -325,6 +326,13 @@
         padding-left: 59px;
     }
    
+}
+
+
+@media (max-width: 354px) {
+    .tab-pan{
+        min-width: 96px
+    }
 }
 
 

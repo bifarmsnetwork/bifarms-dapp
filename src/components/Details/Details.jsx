@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../Launchpad/Launchpad.css";
 import "./Details.css";
-import Logo from "../../images/coin.svg";
+import coinLogo from "../../images/Untitled-1.svg";
 import { approve, checkApprove,claimInitialToken,claimToken,checkDeposit,checkBalance } from "../../busd";
 import modal from "../../modal";
 
@@ -103,8 +103,8 @@ const Details = () => {
                 <div className="item1">
                   <div className="item-top">
                     <div className="idologo">
-                      <img src={Logo} alt="logo" className="ido-logo" />
-                      <span className="ido-name"> BiFarms </span>
+                      <img src={coinLogo} alt="logo" className="ido-logo" />
+                      {/* <span className="ido-name"> BiFarms </span> */}
                     </div>
                   </div>
                   <div className="ido-desc line4hidden">
@@ -121,34 +121,34 @@ const Details = () => {
                 </div>
                 <div className="ido-links">
                   <div className="ido-link-item">
-                    <img
+                  <a href="https://bifarms.network/" className="href" target="_blank"><img
                       src="https://cdn.erax.io/user/20210926/7c8df6a048393cb2cbaf3b35dc134291.png"
                       alt=""
-                    />
+                    /></a>
                   </div>
                   <div className="ido-link-item">
-                    <img
+                  <a href="https://bifarms.network/Whitepaper.pdf" className="href" target="_blank"><img
                       src="https://cdn.erax.io/user/20210926/dabe6ff390ffaa42ede19ec479b98e1f.png"
                       alt=""
-                    />
+                    /></a>
                   </div>
                   <div className="ido-link-item">
-                    <img
+                  <a href="https://twitter.com/bifarmsnetwork" className="href" target="_blank"><img
                       src="https://cdn.erax.io/user/20210926/a45efe3c3a229639d9b638eb2a2241d8.png"
                       alt=""
-                    />
+                    /></a>
                   </div>
                   <div className="ido-link-item">
-                    <img
+                  <a href="https://t.me/bifarmsnetwork" className="href" target="_blank"><img
                       src="https://cdn.erax.io/user/20210926/c1ebe8df6a490299990f781d82632e3d.png"
                       alt=""
-                    />
+                    /></a>
                   </div>
                   <div className="ido-link-item">
-                    <img
+                  <a href="https://medium.com/@bifarmsnetwork" className="href" target="_blank"><img
                       src="	https://cdn.erax.io/user/20210926/9571e925dd6896cad7bcef52d336030e.png"
                       alt=""
-                    />
+                    /></a>
                   </div>
                 </div>
                 <div className="cap">
@@ -166,7 +166,7 @@ const Details = () => {
                     {" "}
                     Supported Coin{" "}
                   </div>
-                  <div className="theme_color"> BUSD </div>
+                  <div className="theme_color column-value"> BUSD </div>
                   <div className="exchange-rate column-value">
                     <span> 1 BFS = 5.00 BUSD / 1 BUSD = 0.20 BFS</span>
                   </div>
@@ -253,9 +253,9 @@ const Details = () => {
               </div>
               <div className="ido-container-right">
                 <div className="left">
-                  <img src={Logo} alt="" className="logo windmill" />
+                  <img src={coinLogo} alt="" className="logo" />
                   <div>
-                    <p className="ido-name"> BiFarms </p>
+                    {/*<p className="ido-name"> BiFarms </p>*/}
                     <div className="ido-tags">
                       <div className="status">
                         <span>Live</span>
@@ -281,11 +281,11 @@ const Details = () => {
                             2022.04.11 09:00 AM UTC
                           </div>
                         </div>
-                        <div className="amount-title">Progress</div>
+                        <div className="amount-title" style={{marginTop: '25px'}}>Progress</div>
                       <div className="amount-value">
                         <div className="progress-desc">
-                          <span> {deposit} BFS</span>
-                          <span> 50,000 BFS</span>
+                          <span> {deposit} BUSD</span>
+                          <span> 250,000 BUSD</span>
                         </div>
                         <div className="progress-plan progress-status2">
                           <div
@@ -313,24 +313,31 @@ const Details = () => {
                         </div>
                       </div>
                       </div>
-                      <div className="amount-title">My subscription amount
+                      <div className="amount-title"  style={{marginTop: '25px'}}>My subscription amount
                         <div className="amount-value">{deposit}</div>
                       </div>
-                      <div className="amount-title">Available
+                      <div className="amount-title"  style={{marginTop: '25px'}}>Available BFS
                         <div className="amount-value">{balance}</div>
                       </div>
+                      <div className="amount-title"  style={{marginTop: '25px'}}>BUSD</div>
                       {status ? (
                         <>
-                        <input type="text" placeholder="Enter deposit amount" value={value} onChange={e=>setValue(e.target.value)} />
+                        <div className="ct1-input">
+                          <input type="text" placeholder="Enter deposit amount" value={value} onChange={e=>setValue(e.target.value)} />
+                        </div>
                         <div className="approve" onClick={handleDeposit}>
                           Deposit
                         </div>
-                        <div className="approve" onClick={handleInitialClaim}>
-                            Inital Claim
+                        <div className="claim_box"><div className="claim" onClick={handleInitialClaim}>
+                            TGE Claim
                           </div>
-                        <div className="approve" onClick={handleClaim}>
+                        <div className="claim" onClick={handleClaim}>
                             Claim
-                          </div></>
+                          </div></div>
+                          
+                          
+                          
+                          </>
                       ) : (
                         <div className="approve" onClick={handleApprove}>
                           Approve
