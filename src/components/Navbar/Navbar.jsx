@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Logo from "../../images/logo.png";
+import Logo from "../../images/logo.svg";
 import { FiMenu, FiX } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import "./Navbar.css";

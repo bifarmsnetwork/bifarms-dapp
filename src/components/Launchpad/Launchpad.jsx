@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Coin from "../../images/coin.png";
+import Coin from "../../images/coin.svg";
 import "./Launchpad.css";
 import modal,{web3Modal} from "../../modal";
 import { seedABI } from "../../abi";
@@ -112,8 +112,8 @@ const Launchpad = () => {
                       <div className="amount-title">Progress</div>
                       <div className="amount-value">
                         <div className="progress-desc">
-                          <span> {deposit} BUSD</span>
-                          <span> 250,000 BUSD</span>
+                          <span> {deposit} BFS</span>
+                          <span> 50,000 BFS</span>
                         </div>
                         <div className="progress-plan progress-status2">
                           <div
@@ -135,7 +135,7 @@ const Launchpad = () => {
                               </div>
                             </div>
                           </div>
-                          <p className="ido-time">
+                          <p className="ido-time" style={{display: 'none'}}>
                             <span> 00 Days 20:34:25</span>
                           </p>
                         </div>

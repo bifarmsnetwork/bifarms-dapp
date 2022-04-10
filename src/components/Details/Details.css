@@ -3,12 +3,13 @@
     display: block;
     flex: 1;
     flex-basis: auto;
-    overflow: auto;
+    overflow: hidden;
     width: 100%;
     padding: 80px 0 0;
     position: relative;
     min-height: calc(100vh - 255px);
     background-color: #09162E;
+
 }
 
 .ido-content {
@@ -58,7 +59,8 @@
     padding: 40px 48px;
     box-sizing: border-box;
     background-color: #09162E;
-    box-shadow: 0 10px 36px 0 #18142b;
+    /* box-shadow: 0 10px 36px 0 #18142b; */
+    border: 0.5px solid rgb(128,128,128,0.2);
 }
 
 
@@ -171,18 +173,24 @@
     flex-direction: column;
     border-radius: 23px;
     background-color: #09162E;
-    box-shadow: 0 10px 36px 0 #18142b;
+    /* box-shadow: 0 10px 36px 0 #18142b; */
     box-sizing: border-box;
+    border: 0.5px solid rgb(128,128,128,0.2);
 
 }
 
 .left {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: start;
-    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: start;
     margin-bottom: 29px;
-
 }
 
 .logo {
@@ -269,4 +277,54 @@
 
 .theme_color{
     color: #0c9fd4;
+}
+
+
+
+@media (max-width: 1000px ){
+    .ido-container-left {
+        width: 422px;
+        border: 0.5px solid rgb(128,128,128,0.2);
+        padding: 40px 20px;
+    }
+    .ido-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .ido-container-right{
+        margin-bottom: 25px;
+        width: 422px;
+    }
+    .left {
+        margin-bottom: 0.47rem;
+    }
+    
+    
+}
+
+
+@media (max-width: 440px ){
+    .ido-container-left {
+        width: 310px;
+        padding: 12px;
+        border: 0.5px solid rgb(128,128,128,0.2);
+    }
+    .ido-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .ido-container-right{
+        margin-bottom: 25px;
+        width: 310px;
+    }
+
+    
+}
+
+
+.amount_color{
+    color:#9999b3;
+
 }

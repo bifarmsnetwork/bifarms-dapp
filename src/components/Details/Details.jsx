@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./Details.css";
 import "../Launchpad/Launchpad.css";
-import Logo from "../../images/coin.png";
+import "./Details.css";
+import Logo from "../../images/coin.svg";
 import { approve, checkApprove,claimInitialToken,claimToken,checkDeposit,checkBalance } from "../../busd";
 import modal from "../../modal";
 
@@ -154,11 +154,11 @@ const Details = () => {
                 <div className="cap">
                   <div className="soft-cap item-column">
                     <div className="cap-title column-title"> Soft Cap</div>
-                    <div className="cap-value column-value"> 0 BFM </div>
+                    <div className="cap-value column-value"> 0 BFS </div>
                   </div>
                   <div className="hart-cap item-column">
                     <div className="cap-title column-title"> Hard Cap</div>
-                    <div className="cap-value column-value"> 50,000 BFM </div>
+                    <div className="cap-value column-value"> 50,000 BFS </div>
                   </div>
                 </div>
                 <div className="supported-coin item-column">
@@ -168,7 +168,7 @@ const Details = () => {
                   </div>
                   <div className="theme_color"> BUSD </div>
                   <div className="exchange-rate column-value">
-                    <span> 1 BFM = 5.00 BUSD / 1 BUSD = 0.20 BFM</span>
+                    <span> 1 BFS = 5.00 BUSD / 1 BUSD = 0.20 BFS</span>
                   </div>
                 </div>
 
@@ -178,21 +178,19 @@ const Details = () => {
                   <div className="exchange-rate column-value">
                     <span className="theme_color">
                       {" "}
-                      0xbbf8c8f9b79808be0bc8d24f2c7a5111b47e230b
+                      <a href="https://bscscan.com/address/0xbbf8c8f9b79808be0bc8d24f2c7a5111b47e230b" style={{ textDecoration: "none", color: "#0c9fd4" }} target="_blank">0xbbf8c8f9b79808be0bc8d24f2c7a5111b47e230b</a>
                     </span>
                   </div>
                 </div>
                 <div className="item-column">
+                  <div className="column-title" style={{marginBottom: '15px'}}> Allocation: <span className="amount_color">500-25,000 BUSD</span><br/> </div>
                   <div className="column-title"> Lock-up rules </div>
                   <div className="column-value">
                     <span style={{ lineHeight: "1.5px" }}>
-                      Allocation: 500-25,000 BUSD
-                      <br />
-                      Vesting time and rules:
-                      <br />
-                      Seed Round - 10% unlocked at TGE, cliff 2 months.
-                      <br />
-                      The rest 90% will be unlocked monthly in the next 15
+                      
+                      {/*Vesting time and rules:*/}
+                      
+                      Seed Round - 10% unlocked at TGE, cliff 2 months. The rest 90% will be unlocked monthly in the next 15
                       months.
                     </span>
                   </div>
@@ -204,7 +202,7 @@ const Details = () => {
                   <div className="exchange-rate column-value">
                     <span>
                       {" "}
-                      https://bifarmsnetwork-1.gitbook.io/bifarms/team/team
+                      <a href="https://bifarmsnetwork-1.gitbook.io/bifarms/team/team" style={{ textDecoration: "none", color: "#0c9fd4" }} target="_blank"> https://bifarmsnetwork-1.gitbook.io/bifarms/team/team</a>
                     </span>
                   </div>
                 </div>
@@ -232,11 +230,11 @@ const Details = () => {
                     <br />
                     Type: BEP20
                     <br />
-                    Ticker: BFM
+                    Ticker: BFS
                     <br />
                     Total supply: 1,000,000(fixed)
                     <br />
-                    Initial circulating supply: 52,000 BFM
+                    Initial circulating supply: 52,000 BFS
                     <br />
                     Initial Circulating market cap: $520,000
                     <br />
@@ -257,10 +255,10 @@ const Details = () => {
                 <div className="left">
                   <img src={Logo} alt="" className="logo windmill" />
                   <div>
-                    <p className="ido-name"> Bifarms </p>
+                    <p className="ido-name"> BiFarms </p>
                     <div className="ido-tags">
                       <div className="status">
-                        <span> Upcoming </span>
+                        <span>Live</span>
                       </div>
                       <div className="chain-info">
                         <img src="" alt="" />
@@ -276,18 +274,50 @@ const Details = () => {
                         <div className="amount-title">Time</div>
                         <div className="amount-value">
                           <div className="start-time time">
-                            2022.04.02 08:00 UTC
+                          <div class="perch"><div class="perch-center"></div></div>
+                            2022.04.11 09:00 AM UTC
                           </div>
                           <div className="end-time time">
-                            2022.04.02 12:00 UTC
+                            2022.04.11 09:00 AM UTC
                           </div>
                         </div>
+                        <div className="amount-title">Progress</div>
+                      <div className="amount-value">
+                        <div className="progress-desc">
+                          <span> {deposit} BFS</span>
+                          <span> 50,000 BFS</span>
+                        </div>
+                        <div className="progress-plan progress-status2">
+                          <div
+                            role="progressbar"
+                            aria-valuenow="100"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            className="el-progress el-progress--line is-success el-progress--without-text"
+                          >
+                            <div className="el-progress-bar">
+                              <div
+                                className="el-progress-bar__outer"
+                                // style="height: 12px;"
+                              >
+                                <div
+                                  className="el-progress-bar__inner"
+                                  // style="width: 100%; background-color: rgb(51,51,75);"
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                          <p className="ido-time" style={{display: 'none'}}>
+                            <span> 00 Days 20:34:25</span>
+                          </p>
+                        </div>
                       </div>
-                      <div>My subscription amount
-                        <div>{deposit}</div>
                       </div>
-                      <div>Available
-                        <div>{balance}</div>
+                      <div className="amount-title">My subscription amount
+                        <div className="amount-value">{deposit}</div>
+                      </div>
+                      <div className="amount-title">Available
+                        <div className="amount-value">{balance}</div>
                       </div>
                       {status ? (
                         <>

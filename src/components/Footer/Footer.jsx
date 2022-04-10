@@ -3,7 +3,7 @@ import { FaMediumM , FaTelegramPlane } from 'react-icons/fa';
 import { FiTwitter , FiGithub } from 'react-icons/fi';
 import { SiGitbook } from "react-icons/si";
 // import { SiDiscord } from 'react-icons/si';
-import Logo from '../../images/logo.png';
+import Logo from '../../images/logo.svg';
 
 import './Footer.css';
 
