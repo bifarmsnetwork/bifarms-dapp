@@ -78,7 +78,18 @@ export const checkDeposit = async(owner)=>{
 }
 
 export const checkBalance = async(owner)=>{
-    let cont = await contractBusd()
-    let balance = await cont.balanceOf(owner)
-    return ethers.utils.formatUnits(balance.toString(),18)
+    let cont = await contractSeed()
+    let balance = await cont.claimDetails(owner)
+    const amount = balance[0].toString().split(',').map(ele=>parseInt(ethers.utils.formatUnits(ele.toString(),18)))
+    return (amount.reduce((a,b)=>a+b))
+    // return ethers.utils.formatUnits(balance.toString(),18)
+}
+
+export const checkAmount = async(owner)=>{
+    let cont = await contractSeed()
+    let balance = await cont.viewDeposits(owner)
+    const amount = balance[0].toString().split(',').map(ele=>parseInt(ethers.utils.formatUnits(ele.toString(),18)))
+    return (amount.reduce((a,b)=>a+b))
+    // return ethers.utils.formatUnits(amount.toString(),18)
+    
 }

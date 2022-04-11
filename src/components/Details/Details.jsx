@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../Launchpad/Launchpad.css";
 import "./Details.css";
 import coinLogo from "../../images/Untitled-1.svg";
-import { approve, getDeposit, checkApprove,claimInitialToken,claimToken,checkDeposit,checkBalance } from "../../busd";
+import { approve, getDeposit, checkApprove,claimInitialToken,claimToken,checkDeposit,checkBalance,checkAmount } from "../../busd";
 import modal from "../../modal";
 
 const Details = () => {
@@ -11,6 +11,7 @@ const Details = () => {
   const [value,setValue]  = useState(0)
   const [deposit,setDeposit] = useState(0)
   const [balance,setBalance] = useState(0)
+  const [amount,setAmount] = useState(0)
 
   const handleCheckApprove = async () => {
     let provider = await modal();
@@ -74,11 +75,21 @@ const Details = () => {
     setBalance(sum)
    }
   }
+
+  const handleAmount = async()=>{
+    let provider = await modal();
+    const accounts = await provider.listAccounts();
+   if(accounts) {
+    let sum = await checkAmount(accounts[0])
+    setAmount(sum)
+   }
+  }
   
   useEffect(() => {
     handleCheckApprove();
     handlecheckDeposit()
     handleBalance()
+    handleAmount()
   });
 
   console.log(value)
@@ -315,7 +326,7 @@ const Details = () => {
                       </div>
                       </div>
                       <div className="amount-title"  style={{marginTop: '25px'}}>My subscription amount
-                        <div className="amount-value">{deposit}</div>
+                        <div className="amount-value">{amount}</div>
                       </div>
                       <div className="amount-title"  style={{marginTop: '25px'}}>Available BFS
                         <div className="amount-value">{balance}</div>
