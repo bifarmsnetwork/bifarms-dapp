@@ -1,2 +1,2 @@
-export const token = "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56"
-export const address = "0xE12808316c2fd95eEf14a45745E9F176Ff710b94"
+export const token = "0xAC212351dC5E1d056D5a36E00A62BA748CbF694c"
+export const address = "0x1868819e052D2daA9a9e770AdB9e175188343971"
