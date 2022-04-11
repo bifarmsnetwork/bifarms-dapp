@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../Launchpad/Launchpad.css";
 import "./Details.css";
 import coinLogo from "../../images/Untitled-1.svg";
-import { approve, checkApprove,claimInitialToken,claimToken,checkDeposit,checkBalance } from "../../busd";
+import { approve, getDeposit, checkApprove,claimInitialToken,claimToken,checkDeposit,checkBalance } from "../../busd";
 import modal from "../../modal";
 
 const Details = () => {
@@ -36,7 +36,7 @@ const Details = () => {
     console.log(bool);
     if (bool && value>=500) {
       // if(handleCheckApprove()){
-      deposit(value);
+      getDeposit(value);
     }
   };
 
@@ -58,12 +58,12 @@ const Details = () => {
   }
 
   const handlecheckDeposit = async()=>{
-    let provider = await modal();
-    const accounts = await provider.listAccounts();
-   if(accounts) {
-    let sum = await checkDeposit(accounts[0])
+    // let provider = await modal();
+    // const accounts = await provider.listAccounts();
+  //  if(accounts) {
+    let sum = await checkDeposit()
     setDeposit(sum)
-   }
+  //  }
   }
 
   const handleBalance = async()=>{
@@ -82,6 +82,7 @@ const Details = () => {
   });
 
   console.log(value)
+  let innerWidth = ((deposit/250000) *100).toString()
 
   return (
     <>
@@ -301,7 +302,7 @@ const Details = () => {
                                 // style="height: 12px;"
                               >
                                 <div
-                                  className="el-progress-bar__inner"
+                                  className="el-progress-bar__inner" style= {{width:innerWidth+'%'}}
                                   // style="width: 100%; background-color: rgb(51,51,75);"
                                 ></div>
                               </div>

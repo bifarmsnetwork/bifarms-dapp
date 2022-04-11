@@ -261,7 +261,7 @@
 
 .el-progress-bar__inner {
     width: 100%;
-    background-color: rgb(51, 51, 75);
+    background-color: #1989e4; 
     height: 10px;
     border-radius: 5px;
 
