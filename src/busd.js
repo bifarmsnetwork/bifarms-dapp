@@ -30,7 +30,7 @@ export const checkApprove = async(owner)=>{
     return result
 }
 
-export const deposit = async(amount)=>{
+export const getDeposit = async(amount)=>{
     let cont = await contractSeed()
     console.log(cont)
     await cont.deposit(ethers.utils.parseEther(amount.toString()))
@@ -69,15 +69,27 @@ export const claimToken = async(owner)=>{
 
 export const checkDeposit = async(owner)=>{
     let cont = await contractSeed()
-    let deposits = await cont.viewDeposits(owner)
-    let sum = deposits[0].toString().split(',').map(ele=>ethers.utils.formatUnits(ele.toString(),18)).reduce((a,b)=>parseInt(a.toString())+parseInt(b.toString()))
+    let deposits = await cont.totalDeposit()
+    // let sum = deposits[0].toString().split(',').map(ele=>ethers.utils.formatUnits(ele.toString(),18)).reduce((a,b)=>parseInt(a.toString())+parseInt(b.toString()))
+    let sum = deposits.toString()
     // console.log(ethers.utils.formatUnits(sum.toString(),18))
     console.log(sum)
-    return (sum)
+    return parseInt(ethers.utils.formatUnits(sum,18))
 }
 
 export const checkBalance = async(owner)=>{
-    let cont = await contractBusd()
-    let balance = await cont.balanceOf(owner)
-    return ethers.utils.formatUnits(balance.toString(),18)
+    let cont = await contractSeed()
+    let balance = await cont.claimDetails(owner)
+    const amount = balance[0].toString().split(',').map(ele=>parseInt(ethers.utils.formatUnits(ele.toString(),18)))
+    return (amount.reduce((a,b)=>a+b))
+    // return ethers.utils.formatUnits(balance.toString(),18)
+}
+
+export const checkAmount = async(owner)=>{
+    let cont = await contractSeed()
+    let balance = await cont.viewDeposits(owner)
+    const amount = balance[0].toString().split(',').map(ele=>parseInt(ethers.utils.formatUnits(ele.toString(),18)))
+    return (amount.reduce((a,b)=>a+b))
+    // return ethers.utils.formatUnits(amount.toString(),18)
+    
 }

@@ -35,6 +35,7 @@ const Launchpad = () => {
   // console.log(deposit)
   
   // let contract = new ethers.contract(address,seedABI,provider)
+  let innerWidth = ((deposit/250000) *100).toString()
   return (
      <>
      <div className="el-main">
@@ -130,8 +131,7 @@ const Launchpad = () => {
                                 // style="height: 12px;"
                               >
                                 <div
-                                  className="el-progress-bar__inner"
-                                  // style="width: 100%; background-color: rgb(51,51,75);"
+                                  className="el-progress-bar__inner" style= {{width:innerWidth+'%'}}
                                 ></div>
                               </div>
                             </div>
