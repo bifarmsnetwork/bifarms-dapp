@@ -49,7 +49,7 @@
 }
 
 .is-active {
-    background-color: #071c2d;
+    background-color: #09162e;
     border-radius: 10px;
     color: #fff;
     box-shadow: 0 3px 3px 0 #03111c;
@@ -75,7 +75,7 @@
 
 .item {
     width: 310px;
-    background-color: #0e1c37;
+    background-color: #09162e;
     border-radius: 23px;
     /* box-shadow: 10px 10px 10px 10px #03111c; */
     margin-bottom: 60px;
@@ -133,7 +133,7 @@
     justify-content: center;
     font-size: 12px;
     font-weight: 400;
-    padding-left: 106px;
+    padding-left: 84px;
     align-items: center;
 
 }
@@ -316,7 +316,8 @@
     
    
     .tab-pan{
-        min-width: 96px
+        min-width: 82px;
+        padding: 0 8px;
     }
     .item{
         margin: 10px auto;
