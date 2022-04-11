@@ -405,3 +405,102 @@
 .ct1-input input:hover{
     border: 1px solid #10a3d7;
 }
+
+
+
+
+.dot {
+    width: var(--dot-size);
+    height: var(--dot-size);
+    background-color: red;
+    border-radius: 50%;
+  }
+
+/* --- Animation --- */
+
+/* Define animation keyframes */
+@keyframes blink {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+  
+  /* Minimal example */
+  .dot--basic {
+    animation: blink 2s infinite;
+  }
+  
+  /* Run animation once */
+  .dot--once {
+    animation: blink 2s 1;
+    /* animation-iteration-count: 1; */
+  }
+  
+  /* Wait 4s before running the animation */
+  .dot--delayed {
+    animation: blink 2s infinite 4s;
+    /* animation-delay: 4s; */
+  }
+  
+  /* Use frames with "from" and "to" */
+  @keyframes choppyBlink {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .dot--choppy {
+    animation: choppyBlink 2s infinite;
+    /* animation-name: choppyBlink; */
+  }
+  
+  /* Animate multiple properties (transform and color) */
+  @keyframes pulse {
+    0%, 100% { 
+      transform: scale(0) translateY(-75%);
+      background-color: blue;
+    }
+    33% {
+      background-color: orange;
+    }
+    50% { 
+      transform: scale(1.125) translateY(0);
+      background-color: red;
+    }
+  }
+  .dot--pulse {
+    animation: pulse 8s infinite;
+  }
+  
+  /* Disable animation if user prefers reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .dot {
+      animation: none;
+    }
+  }
+  
+  
+  /* --- Sample Usage --- */
+  
+  .sample-item {
+    --dot-size: 0.5rem;
+    --offline-color: #999;
+    --offline-text-color: #666;
+    
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid red;
+    border-radius: 4px;
+    padding: .5rem 1rem;
+  }
+  
+  .sample-item .dot {
+    margin-right: .5rem;
+  }
+  
+  .sample-item--offline {
+    border-color: var(--offline-color);
+    color: var(--offline-text-color);
+  }
+  
+  .sample-item--offline .dot {
+    animation: none;
+    background-color: var(--offline-color);
+  }
