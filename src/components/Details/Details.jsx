@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../Launchpad/Launchpad.css";
 import "./Details.css";
 import coinLogo from "../../images/Untitled-1.svg";
-import { approve, getDeposit, checkApprove,claimInitialToken,claimToken,checkDeposit,checkBalance,checkAmount } from "../../busd";
+import { approve, getDeposit, checkApprove,claimInitialToken,claimToken,checkDeposit,checkBalance,checkAmount,getAccountBalance} from "../../busd";
 import modal from "../../modal";
 
 const Details = () => {
@@ -12,6 +12,7 @@ const Details = () => {
   const [deposit,setDeposit] = useState(0)
   const [balance,setBalance] = useState(0)
   const [amount,setAmount] = useState(0)
+  const [accountBalance,setAccountBalance] = useState(0)
 
   const handleCheckApprove = async () => {
     let provider = await modal();
@@ -85,6 +86,15 @@ const Details = () => {
    }
   }
   
+  const handleAccountBalance = async()=>{
+    let provider = await modal();
+    const accounts = await provider.listAccounts();
+   if(accounts) {
+    let sum = await getAccountBalance(accounts[0])
+    setValue(sum)
+   }
+  }
+
   useEffect(() => {
     handleCheckApprove();
     handlecheckDeposit()
@@ -336,6 +346,7 @@ const Details = () => {
                         <>
                         <div className="ct1-input">
                           <input type="text" placeholder="Enter deposit amount" value={value} onChange={e=>setValue(e.target.value)} />
+                          <span onClick={handleAccountBalance} className="ct1-max"> MAX</span>
                         </div>
                         <div className="approve" onClick={handleDeposit}>
                           Deposit

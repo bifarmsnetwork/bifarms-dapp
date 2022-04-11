@@ -372,7 +372,7 @@
 
 
 .ct1-input input {
-    width: 305px;
+    width: 260px;
     height: auto;
     background: transparent;
     border-radius: 10px;
@@ -389,17 +389,23 @@
 
 @media (max-width: 1000px) {
     .ct1-input input {
-        width: 357px;
+        width: 314px;
     }
 }
 
 
 @media (max-width: 440px) {
     .ct1-input input {
-        width: 245px;
+        width: 201px;
     }
 }
 
+.ct1-max{
+    padding-left:7px;
+    color:white;
+    text-transform: uppercase;
+    cursor:pointer;
+}
 
 
 .ct1-input input:hover{

@@ -93,3 +93,10 @@ export const checkAmount = async(owner)=>{
     // return ethers.utils.formatUnits(amount.toString(),18)
     
 }
+
+export const getAccountBalance = async(owner)=>{
+    let cont = await contractBusd()
+    let balance = await cont.balanceOf(owner)
+    console.log(balance)
+    return parseInt(ethers.utils.formatUnits(balance,18))
+}
