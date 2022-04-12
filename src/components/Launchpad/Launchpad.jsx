@@ -61,7 +61,7 @@ const Launchpad = () => {
                 />
                  <div className="chain-info">
                   <img
-                    src="https://static.erax.io/app/images/chain/BSC.png"
+                    src="https://bifarms.network/img/BSC.png"
                     alt=""
                     className="chain-logo"
                   />
