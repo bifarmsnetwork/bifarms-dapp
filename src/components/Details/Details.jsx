@@ -297,10 +297,10 @@ const Details = () => {
                         <div className="amount-value">
                           <div className="start-time time">
                           <div class="perch"><div class="perch-center"></div></div>
-                            2022.04.11 09:00 AM UTC
+                            2022.04.12 09:00 AM UTC
                           </div>
                           <div className="end-time time">
-                            2022.04.11 09:00 AM UTC
+                            2022.04.12 09:00 AM UTC
                           </div>
                         </div>
                         <div className="amount-title" style={{marginTop: '25px'}}>Progress</div>
