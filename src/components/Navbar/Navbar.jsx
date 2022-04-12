@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Logo from "../../images/logo.svg";
+import Dots from "../../images/dots.png";
 import { FiMenu, FiX } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
@@ -82,43 +83,71 @@ const Navbar = () => {
     }
   }, [instance]);
 
+  
+
+
   return (
-    <nav className="navbar">
-      <Link to="/" className="nav-logo">
-        <img src={Logo} alt="Logo" />
-      </Link>
-      <div onClick={handleClick} className="nav-icon">
-        {open ? <FiX /> : <FiMenu />}
+    <div className="header">
+      <div className="header-container">
+        <div className="header-left">
+                  <Link to="/" className="nav-logo">
+                    <img src={Logo} alt="Logo" className="header-left-logo" />
+                  </Link>
+                  <div className="nav">
+                    <div className="n-item">
+                      <Link to="/" className="nav-link" onClick={closeMenu}>
+                        Launchpad
+                      </Link>
+                    </div>
+                    <div className="n-item">
+                      <Link to="/" className="nav-link" onClick={closeMenu}>
+                        Farms
+                      </Link>
+                    </div>
+                    <div className="n-item">
+                      <Link to="/" className="nav-link" onClick={closeMenu}>
+                        Pool
+                      </Link>
+                    </div>
+
+                  
+                  </div>
       </div>
-      <ul className={open ? "nav-links active" : "nav-links"}>
-        <li className="nav-item">
-          <Link to="/" className="nav-link" onClick={closeMenu}>
-            Launchpad
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/" className="nav-link" onClick={closeMenu}>
-            Farms
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/" className="nav-link" onClick={closeMenu}>
-            Pool
-          </Link>
-        </li>
-        <li className="nav-item">
-          {account ? (
-            <button href="" className="connect" onClick={disconnectWallet}>
-              Disconnect
-            </button>
-          ) : (
-            <button href="" className="connect" onClick={connectWallet}>
-              Connect
-            </button>
-          )}
-        </li>
-      </ul>
-    </nav>
+      <div className="header-right">
+
+
+
+            <div className="connect_button">
+                      {account ? (
+                        <button href="" className="connect" onClick={disconnectWallet}>
+                          Disconnect
+                        </button>
+                      ) : (
+                        <button href="" className="disconnect" onClick={connectWallet}>
+                          Connect
+                        </button>
+                      )}
+                </div>
+                <div className="more-nav">
+                    <button style={{backgroundColor:'transparent', border:'none'}}><img src={Dots} alt="Nav" onClick="{flipNav}"/></button>
+                     <ul id="nav-list" className="nav-list" style={{display: 'none'}}>
+                    <li className="n-item select-tab" style={{display: 'none'}}>
+                    Launchpad<i className="iconfont icon-icons-launchpad">
+                    </i>
+                    </li>
+                     <li className="n-item" style={{display: 'none'}}>
+                    Earning</li>
+                     <li className="n-item" style={{display: 'none'}}>
+                    Bridge</li>
+                    </ul>
+                </div>
+
+
+
+                </div>
+                
+      </div>          
+    </div>
   );
 };
 

@@ -200,7 +200,7 @@ const Details = () => {
                   <div className="exchange-rate column-value">
                     <span className="theme_color">
                       {" "}
-                      <a href="https://bscscan.com/address/0xbbf8c8f9b79808be0bc8d24f2c7a5111b47e230b" style={{ textDecoration: "none", color: "#0c9fd4" }} target="_blank">0xbbf8c8f9b79808be0bc8d24f2c7a5111b47e230b</a>
+                      <a href="https://bscscan.com/address/0xbbf8c8f9b79808be0bc8d24f2c7a5111b47e230b" style={{ textDecoration: "none", color: "#0c9fd4" , lineBreak: 'anywhere'}} target="_blank">0xbbf8c8f9b79808be0bc8d24f2c7a5111b47e230b</a>
                     </span>
                   </div>
                 </div>
@@ -279,7 +279,7 @@ const Details = () => {
                   <div>
                     {/*<p className="ido-name"> BiFarms </p>*/}
                     <div className="ido-tags">
-                      <div className="status">
+                      <div className="status"><div class="dot dot--basic" aria-hidden="true"></div>
                         <span>Live</span>
                       </div>
                       <div className="chain-info">
