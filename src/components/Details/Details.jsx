@@ -144,31 +144,31 @@ const Details = () => {
                 <div className="ido-links">
                   <div className="ido-link-item">
                   <a href="https://bifarms.network/" className="href" target="_blank"><img
-                      src="https://cdn.erax.io/user/20210926/7c8df6a048393cb2cbaf3b35dc134291.png"
+                      src="https://bifarms.network/img/website.png"
                       alt=""
                     /></a>
                   </div>
                   <div className="ido-link-item">
                   <a href="https://bifarms.network/Whitepaper.pdf" className="href" target="_blank"><img
-                      src="https://cdn.erax.io/user/20210926/dabe6ff390ffaa42ede19ec479b98e1f.png"
+                      src="https://bifarms.network/img/whitepaper.png"
                       alt=""
                     /></a>
                   </div>
                   <div className="ido-link-item">
                   <a href="https://twitter.com/bifarmsnetwork" className="href" target="_blank"><img
-                      src="https://cdn.erax.io/user/20210926/a45efe3c3a229639d9b638eb2a2241d8.png"
+                      src="https://bifarms.network/img/twitterb.png"
                       alt=""
                     /></a>
                   </div>
                   <div className="ido-link-item">
                   <a href="https://t.me/bifarmsnetwork" className="href" target="_blank"><img
-                      src="https://cdn.erax.io/user/20210926/c1ebe8df6a490299990f781d82632e3d.png"
+                      src="https://bifarms.network/img/teleb.png"
                       alt=""
                     /></a>
                   </div>
                   <div className="ido-link-item">
                   <a href="https://medium.com/@bifarmsnetwork" className="href" target="_blank"><img
-                      src="	https://cdn.erax.io/user/20210926/9571e925dd6896cad7bcef52d336030e.png"
+                      src="https://bifarms.network/img/mediumb.png"
                       alt=""
                     /></a>
                   </div>
@@ -200,7 +200,7 @@ const Details = () => {
                   <div className="exchange-rate column-value">
                     <span className="theme_color">
                       {" "}
-                      <a href="https://bscscan.com/address/0xbbf8c8f9b79808be0bc8d24f2c7a5111b47e230b" style={{ textDecoration: "none", color: "#0c9fd4" }} target="_blank">0xbbf8c8f9b79808be0bc8d24f2c7a5111b47e230b</a>
+                      <a href="https://bscscan.com/address/0xbbf8c8f9b79808be0bc8d24f2c7a5111b47e230b" style={{ textDecoration: "none", color: "#0c9fd4" , lineBreak: 'anywhere'}} target="_blank">0xbbf8c8f9b79808be0bc8d24f2c7a5111b47e230b</a>
                     </span>
                   </div>
                 </div>
@@ -279,7 +279,9 @@ const Details = () => {
                   <div>
                     {/*<p className="ido-name"> BiFarms </p>*/}
                     <div className="ido-tags">
-                      <div className="status">
+                      <div className="status"><div className="perch_detail moving_image">
+                            <div className="perch_center_detail"></div>
+                          </div>
                         <span>Live</span>
                       </div>
                       <div className="chain-info">
@@ -297,10 +299,10 @@ const Details = () => {
                         <div className="amount-value">
                           <div className="start-time time">
                           <div class="perch"><div class="perch-center"></div></div>
-                            2022.04.11 09:00 AM UTC
+                            2022.04.12 09:00 AM UTC
                           </div>
                           <div className="end-time time">
-                            2022.04.11 09:00 AM UTC
+                            2022.04.12 09:00 AM UTC
                           </div>
                         </div>
                         <div className="amount-title" style={{marginTop: '25px'}}>Progress</div>

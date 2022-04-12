@@ -248,7 +248,7 @@
     /* line-height: 52px; */
     border-radius: 9px;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
     color: #fff;
     text-align: center;
     cursor: pointer;
@@ -264,13 +264,13 @@
     /* line-height: 52px; */
     border-radius: 9px;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
     color: #fff;
     text-align: center;
     cursor: pointer;
     margin-top: 20px;
     background-image: linear-gradient(180deg , #10a3d7 , #2669f5);
-    width: 142px;
+    width: 46%;
     padding: 10px 16px;
 
 
@@ -372,14 +372,14 @@
 
 
 .ct1-input input {
-    width: 260px;
+    width: 306px;
     height: auto;
     background: transparent;
     border-radius: 10px;
     border: none;
     padding-left: 10px;
     color: #ddd;
-    border: 1px solid #ddd;
+    border: 1px solid rgb(128,128,128,0.9);
     padding: 10px 16px;
 }
 
@@ -387,16 +387,23 @@
 
 
 
+@media (max-width: 1140px) {
+    .ct1-input input {
+        width: 80%;
+    }
+}
+
+
 @media (max-width: 1000px) {
     .ct1-input input {
-        width: 314px;
+        width: 354px;
     }
 }
 
 
 @media (max-width: 440px) {
     .ct1-input input {
-        width: 201px;
+        width: 243px;
     }
 }
 
@@ -405,9 +412,152 @@
     color:white;
     text-transform: uppercase;
     cursor:pointer;
+    margin: -366px 0px 0px -59px;
 }
 
 
 .ct1-input input:hover{
     border: 1px solid #10a3d7;
 }
+
+
+
+
+.dot {
+    width: var(--dot-size);
+    height: var(--dot-size);
+    background-color: red;
+    border-radius: 50%;
+  }
+
+/* --- Animation --- */
+
+/* Define animation keyframes */
+@keyframes blink {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+  
+  /* Minimal example */
+  .dot--basic {
+    animation: blink 2s infinite;
+  }
+  
+  /* Run animation once */
+  .dot--once {
+    animation: blink 2s 1;
+    /* animation-iteration-count: 1; */
+  }
+  
+  /* Wait 4s before running the animation */
+  .dot--delayed {
+    animation: blink 2s infinite 4s;
+    /* animation-delay: 4s; */
+  }
+  
+  /* Use frames with "from" and "to" */
+  @keyframes choppyBlink {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .dot--choppy {
+    animation: choppyBlink 2s infinite;
+    /* animation-name: choppyBlink; */
+  }
+  
+  /* Animate multiple properties (transform and color) */
+  @keyframes pulse {
+    0%, 100% { 
+      transform: scale(0) translateY(-75%);
+      background-color: blue;
+    }
+    33% {
+      background-color: orange;
+    }
+    50% { 
+      transform: scale(1.125) translateY(0);
+      background-color: red;
+    }
+  }
+  .dot--pulse {
+    animation: pulse 8s infinite;
+  }
+  
+  /* Disable animation if user prefers reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .dot {
+      animation: none;
+    }
+  }
+  
+  
+  /* --- Sample Usage --- */
+  
+  .sample-item {
+    --dot-size: 0.5rem;
+    --offline-color: #999;
+    --offline-text-color: #666;
+    
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid red;
+    border-radius: 4px;
+    padding: .5rem 1rem;
+  }
+  
+  .sample-item .dot {
+    margin-right: .5rem;
+  }
+  
+  .sample-item--offline {
+    border-color: var(--offline-color);
+    color: var(--offline-text-color);
+  }
+  
+  .sample-item--offline .dot {
+    animation: none;
+    background-color: var(--offline-color);
+  }
+
+
+
+  .perch_detail {
+    width: 12px;
+    height: 12px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    animation: mymove 5s infinite;
+    animation-timing-function: linear;
+    visibility: visible;
+    z-index: 40;
+}
+
+.perch_center_detail {
+    width: 7px;
+    height: 7px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+
+
+.moving_image {
+    
+}
+
+
+@keyframes mymove {
+    0%, 100% {
+        background-color: rgb(255,255,255,0.8);
+    }
+    50% {
+        background-color: rgb(255,255,255,0.2);;
+        
+    }
+  }
