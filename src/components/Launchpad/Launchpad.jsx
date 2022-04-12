@@ -94,10 +94,10 @@ const Launchpad = () => {
                       <div className="amount-title"> Time </div>
                       <div className="amount-value">
                         <div className="start-time time">
-                          {/* <div className="perch">
+                          <div className="perch">
                             <div className="perch-center"></div>
-                          </div> */}
-                          10.04.2022 09.00 AM UTC
+                          </div>
+                          2022.04.12 09.00 AM UTC
                         </div>
                         <div className="end-time time">
                           {/* <div className="perch">

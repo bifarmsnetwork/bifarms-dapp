@@ -270,7 +270,7 @@
     cursor: pointer;
     margin-top: 20px;
     background-image: linear-gradient(180deg , #10a3d7 , #2669f5);
-    width: 142px;
+    width: 46%;
     padding: 10px 16px;
 
 
@@ -372,14 +372,14 @@
 
 
 .ct1-input input {
-    width: 260px;
+    width: 306px;
     height: auto;
     background: transparent;
     border-radius: 10px;
     border: none;
     padding-left: 10px;
     color: #ddd;
-    border: 1px solid #ddd;
+    border: 1px solid rgb(128,128,128,0.9);
     padding: 10px 16px;
 }
 
@@ -387,16 +387,23 @@
 
 
 
+@media (max-width: 1140px) {
+    .ct1-input input {
+        width: 80%;
+    }
+}
+
+
 @media (max-width: 1000px) {
     .ct1-input input {
-        width: 314px;
+        width: 354px;
     }
 }
 
 
 @media (max-width: 440px) {
     .ct1-input input {
-        width: 201px;
+        width: 243px;
     }
 }
 
@@ -405,6 +412,7 @@
     color:white;
     text-transform: uppercase;
     cursor:pointer;
+    margin: -366px 0px 0px -59px;
 }
 
 
@@ -509,4 +517,47 @@
   .sample-item--offline .dot {
     animation: none;
     background-color: var(--offline-color);
+  }
+
+
+
+  .perch_detail {
+    width: 12px;
+    height: 12px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    animation: mymove 5s infinite;
+    animation-timing-function: linear;
+    visibility: visible;
+    z-index: 40;
+}
+
+.perch_center_detail {
+    width: 7px;
+    height: 7px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+
+
+.moving_image {
+    
+}
+
+
+@keyframes mymove {
+    0%, 100% {
+        background-color: rgb(255,255,255,0.8);
+    }
+    50% {
+        background-color: rgb(255,255,255,0.2);;
+        
+    }
   }

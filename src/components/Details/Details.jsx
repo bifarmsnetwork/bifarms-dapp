@@ -279,7 +279,9 @@ const Details = () => {
                   <div>
                     {/*<p className="ido-name"> BiFarms </p>*/}
                     <div className="ido-tags">
-                      <div className="status"><div class="dot dot--basic" aria-hidden="true"></div>
+                      <div className="status"><div className="perch_detail moving_image">
+                            <div className="perch_center_detail"></div>
+                          </div>
                         <span>Live</span>
                       </div>
                       <div className="chain-info">
