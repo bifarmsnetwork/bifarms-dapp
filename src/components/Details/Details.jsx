@@ -144,31 +144,31 @@ const Details = () => {
                 <div className="ido-links">
                   <div className="ido-link-item">
                   <a href="https://bifarms.network/" className="href" target="_blank"><img
-                      src="https://cdn.erax.io/user/20210926/7c8df6a048393cb2cbaf3b35dc134291.png"
+                      src="https://bifarms.network/img/website.png"
                       alt=""
                     /></a>
                   </div>
                   <div className="ido-link-item">
                   <a href="https://bifarms.network/Whitepaper.pdf" className="href" target="_blank"><img
-                      src="https://cdn.erax.io/user/20210926/dabe6ff390ffaa42ede19ec479b98e1f.png"
+                      src="https://bifarms.network/img/whitepaper.png"
                       alt=""
                     /></a>
                   </div>
                   <div className="ido-link-item">
                   <a href="https://twitter.com/bifarmsnetwork" className="href" target="_blank"><img
-                      src="https://cdn.erax.io/user/20210926/a45efe3c3a229639d9b638eb2a2241d8.png"
+                      src="https://bifarms.network/img/twitterb.png"
                       alt=""
                     /></a>
                   </div>
                   <div className="ido-link-item">
                   <a href="https://t.me/bifarmsnetwork" className="href" target="_blank"><img
-                      src="https://cdn.erax.io/user/20210926/c1ebe8df6a490299990f781d82632e3d.png"
+                      src="https://bifarms.network/img/teleb.png"
                       alt=""
                     /></a>
                   </div>
                   <div className="ido-link-item">
                   <a href="https://medium.com/@bifarmsnetwork" className="href" target="_blank"><img
-                      src="	https://cdn.erax.io/user/20210926/9571e925dd6896cad7bcef52d336030e.png"
+                      src="https://bifarms.network/img/mediumb.png"
                       alt=""
                     /></a>
                   </div>
