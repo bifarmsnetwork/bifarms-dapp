@@ -31,6 +31,12 @@
 .header-left-logo {
     width: 120px;
     cursor: pointer;
+    margin-top:6px
+}
+
+.header-left-mobile-logo {
+    width: 45px;
+    cursor: pointer;
 }
 
 .nav {
@@ -65,6 +71,7 @@
     justify-content: start;
     align-items: center;
     height: 80px;
+    margin-right: -20px;
 
 }
 
@@ -94,7 +101,7 @@
     .header-container{
         padding: 0 19px;
     }
-    .header-left-logo{
+    .header-left-mobile-logo{
         margin-top: 11px;
     }
     
