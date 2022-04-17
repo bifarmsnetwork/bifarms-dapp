@@ -20,7 +20,7 @@ const contractSeed = async()=>{
 export const approve = async()=>{
     let cont = await contractBusd()
     let value = 100000000000000000000000n
-    await cont.approve(address,value)
+    return await cont.approve(address,value)
 }
 
 export const checkApprove = async(owner)=>{

@@ -30,7 +30,9 @@ const Details = () => {
     let bool = await handleCheckApprove();
     console.log(bool);
     if (!bool) {
-      approve();
+      let res = await approve();
+      let confirmation = res.wait();
+      if (confirmation.blockNumber) setStatus(true);
     }
   };
   const handleDeposit = async () => {
