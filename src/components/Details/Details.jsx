@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,useContext } from "react";
 import { Link } from "react-router-dom";
 import "../Launchpad/Launchpad.css";
 import "./Details.css";
 import coinLogo from "../../images/Untitled-1.svg";
 import { approve, getDeposit, checkApprove,claimInitialToken,claimToken,checkDeposit,checkBalance,checkAmount,getAccountBalance} from "../../busd";
 import modal from "../../modal";
+import { NetworkContext } from "../../context/NetworkContext";
 
 const Details = () => {
   const [status, setStatus] = useState(false);
@@ -12,13 +13,13 @@ const Details = () => {
   const [deposit,setDeposit] = useState(0)
   const [balance,setBalance] = useState(0)
   const [amount,setAmount] = useState(0)
-  const [accountBalance,setAccountBalance] = useState(0)
+  const [account,setAccount] = useContext(NetworkContext)
 
   const handleCheckApprove = async () => {
-    let provider = await modal();
-    const accounts = await provider.listAccounts();
-    if (accounts) {
-      let value = await checkApprove(accounts[0]);
+    // let provider = await modal();
+    // const accounts = await provider.listAccounts();
+    if (account) {
+      let value = await checkApprove(account);
       console.log(value.toString());
       if (parseInt(value.toString()) > 0) setStatus(true);
       else setStatus(false);
@@ -30,7 +31,10 @@ const Details = () => {
     let bool = await handleCheckApprove();
     console.log(bool);
     if (!bool) {
-      approve();
+      let res = await approve()
+      let res2 = await res.wait()
+      console.log(res2.blockNumber)
+      if(res2.blockNumber) setStatus(true)
     }
   };
   const handleDeposit = async () => {

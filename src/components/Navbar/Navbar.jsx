@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef ,useContext} from "react";
 import Logo from "../../images/logo.svg";
 import MobileLogo from "../../images/logo-icon.png"
 import Dots from "../../images/dots.png";
@@ -6,16 +6,19 @@ import { FiMenu, FiX } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import modal, { web3Modal } from "../../modal";
+import { NetworkContext } from "../../context/NetworkContext";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [instance, setInstance] = useState();
   const [provider, setProvider] = useState();
   const [error, setError] = useState();
-  const [account, setAccount] = useState();
+  // const [account, setAccount] = useState();
   const [width,setWidth] = useState(window.innerWidth)
   let breakpoint = 1000
 
+  const [account,setAccount] = useContext(NetworkContext)
+  console.log(account)
   const handleClick = () => {
     setOpen(!open);
   };
@@ -66,7 +69,8 @@ const Navbar = () => {
     if (instance?.on) {
       const handleAccountsChanged = (accounts) => {
         console.log("accountsChanged", accounts);
-        if (accounts) setAccount(accounts[0]);
+        if (accounts) connectWallet() 
+        //  setAccount(accounts[0]);
       };
 
       const handleDisconnect = () => {
@@ -90,7 +94,6 @@ const Navbar = () => {
     const handleLogo = ()=> setWidth(window.innerWidth)
     window.addEventListener('resize',handleLogo)
     return ()=>window.removeEventListener('resize',handleLogo)
-    
   },[])
   
 
