@@ -33,7 +33,7 @@ export const checkApprove = async(owner)=>{
 export const getDeposit = async(amount)=>{
     let cont = await contractSeed()
     console.log(cont)
-    await cont.deposit(ethers.utils.parseEther(amount.toString()))
+    return await cont.deposit(ethers.utils.parseEther(amount.toString()))
 }
 
 export const claimInitialToken = async(owner)=>{

@@ -26,6 +26,14 @@ const Details = () => {
       return status;
     }
   };
+  const handlecheckDeposit = async()=>{
+    // let provider = await modal();
+    // const accounts = await provider.listAccounts();
+  //  if(accounts) {
+    let sum = await checkDeposit()
+    setDeposit(sum)
+  //  }
+  }
 
   const handleApprove = async () => {
     let bool = await handleCheckApprove();
@@ -37,12 +45,17 @@ const Details = () => {
       if(res2.blockNumber) setStatus(true)
     }
   };
+
   const handleDeposit = async () => {
     let bool = await handleCheckApprove();
     console.log(bool);
     if (bool && value>=500) {
       // if(handleCheckApprove()){
-      getDeposit(value);
+      let res = await getDeposit(value);
+      console.log(res)
+      let res2 = await res.wait()
+      console.log(res2.blockNumber)
+      if(res2.blockNumber) handlecheckDeposit()      
     }
   };
 
@@ -63,15 +76,7 @@ const Details = () => {
   }
   }
 
-  const handlecheckDeposit = async()=>{
-    // let provider = await modal();
-    // const accounts = await provider.listAccounts();
-  //  if(accounts) {
-    let sum = await checkDeposit()
-    setDeposit(sum)
-  //  }
-  }
-
+  
   const handleBalance = async()=>{
     let provider = await modal();
     const accounts = await provider.listAccounts();
