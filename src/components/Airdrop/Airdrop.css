@@ -295,9 +295,6 @@
 .ido-with-whitelist {
     display: flex;
     justify-content: center;
-    
-    
-    
 }
 .ido-btn-white-list {
     color: #fff;
@@ -387,4 +384,8 @@
 
 .color_grey{
     color: #9a9ab4;
+}
+
+.color_hover:hover{
+    color:#1989e4
 }

@@ -21,64 +21,71 @@ const Airdrop = () => {
 
   
   return (
-     <>
-     <div className="el-main">
-      <div className="aido">
-      
-        <div className="alist">
-          {/* Item 1 */}
-          <div className={toggleState === 1 ? "aitem" : "no-item"}>
-            <div className="item-container">
-              
-              <div className="right">
-                <div className="atop-div">
-                  <div className="aleft_side">
-                      <div><img
-                        src={Coin}
-                        alt="logo"
-                        className="alogo"
-                      /></div>
-                    <div className="aname_div">
-                    <p className="aido-name">BiFarms Airdrop</p>
-                    <p className="aido-name"><span className="color_grey">Check:</span> Whitelist</p>
-                    <p className="aido-name"><span className="color_grey">Token Address:</span> {account}</p>
-                  </div>
-                  </div>
-        
-                  <div className="abutton-div">
-                    <div className="ido-with-whitelist">
-                      <div className="aido-btn-detail linear-btn">
-                        {/* <Link to="/" style={{ textDecoration: 'none' }}> */}
-                        <div className="ido-btn-white-list" onClick={handleClaim}> Claim Airdrop </div>
-                        {/* </Link> */}
-                        
+    <>
+      <div className="el-main">
+        <div className="aido">
+          <div className="alist">
+            {/* Item 1 */}
+            <div className={toggleState === 1 ? "aitem" : "no-item"}>
+              <div className="item-container">
+                <div className="right">
+                  <div className="atop-div">
+                    <div className="aleft_side">
+                      <div>
+                        <img src={Coin} alt="logo" className="alogo" />
                       </div>
-                      {/* <div className="ido-btn-detail shake-shake linear-btn">
+                      <div className="aname_div">
+                        <p className="aido-name">BiFarms Airdrop | FCFS</p>
+                        <p className="aido-name">
+                          <span className="color_grey">Check:</span>{" "}
+                          <a className = "color_hover" href="https://bifarms.network/WinnersList.xlsx">
+                            Whitelist
+                          </a>
+                        </p>
+                        <p className="aido-name">
+                          <span className="color_grey">
+                              Token Address:
+                          </span>{" "}
+                            <a className = "color_hover" href="https://bscscan.com/address/0xbbf8c8f9b79808be0bc8d24f2c7a5111b47e230b#code">
+                          {account}
+                            </a>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="abutton-div">
+                      <div className="ido-with-whitelist">
+                        <div className="aido-btn-detail linear-btn">
+                          {/* <Link to="/" style={{ textDecoration: 'none' }}> */}
+                          <div
+                            className="ido-btn-white-list"
+                            onClick={handleClaim}
+                          >
+                            {" "}
+                            Claim Airdrop{" "}
+                          </div>
+                          {/* </Link> */}
+                        </div>
+                        {/* <div className="ido-btn-detail shake-shake linear-btn">
                         Details
                       </div> */}
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          
-         
-          </div>
-          {/* Item 1 End */}
-          <div className={toggleState === 2 ? "empty-item" : "no-item"}>
-            
-              <img src={noItem} style={{width: '85%'}} />
+            {/* Item 1 End */}
+            <div className={toggleState === 2 ? "empty-item" : "no-item"}>
+              <img src={noItem} style={{ width: "85%" }} />
               <p>No data yet </p>
-            
+            </div>
+            <div className={toggleState === 3 ? "empty-item" : "no-item"}>
+              <img src={noItem} style={{ width: "85%" }} />
+              <p>No data yet </p>
+            </div>
           </div>
-          <div className={toggleState === 3 ? "empty-item" : "no-item"}>
-            
-            <img src={noItem} style={{width: '85%'}}/>
-            <p>No data yet </p>
-          
         </div>
-        </div>
-      </div>
       </div>
     </>
   );
