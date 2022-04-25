@@ -281,9 +281,9 @@ const Details = () => {
                 </div>
                 <div className="harvestDesc"></div>
               </div>
-              <div className="ido-container-right">
+              <div id="Live" className="ido-container-right">
                 <div className="left">
-                  <img src={coinLogo} alt="" className="logo" />
+                  <img src={coinLogo} alt="" className="dlogo" />
                   <div>
                     {/*<p className="ido-name"> BiFarms </p>*/}
                     <div className="ido-tags">

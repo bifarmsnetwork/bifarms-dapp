@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Coin from "../../images/coin.svg";
 import noItem from "../../images/no_item.png";
+import "../Details/Details.css";
 import "./Launchpad.css";
 import modal,{web3Modal} from "../../modal";
 import { seedABI } from "../../abi";
@@ -146,7 +147,7 @@ const Launchpad = () => {
                   <div className="button-div">
                     <div className="ido-with-whitelist">
                       <div className="ido-btn-detail linear-btn">
-                        <Link to="/details" style={{ textDecoration: 'none' }}>
+                        <Link to="/details/#Live" style={{ textDecoration: 'none' }}>
                         <div className="ido-btn-white-list"> Details </div>
                         </Link>
                         

@@ -5,6 +5,7 @@ import Details from './components/Details/Details';
 import Footer from './components/Footer/Footer';
 import Launchpad from './components/Launchpad/Launchpad';
 import Navbar from './components/Navbar/Navbar';
+import Airdrop from './components/Airdrop/Airdrop.jsx';
 import { NetworkProvider } from './context/NetworkContext';
 
 
@@ -17,6 +18,7 @@ const App = () => {
     <Routes>
       <Route path="/" element = {<Launchpad/>}/>
       <Route path="/details" element = {<Details/>}/>
+      <Route path="/Airdrop" element = {<Airdrop/>}/>
     </Routes>
     <Footer/>
     </NetworkProvider>

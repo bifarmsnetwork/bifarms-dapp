@@ -125,7 +125,7 @@ const Navbar = () => {
               </Link>
             </div>
             <div className="n-item">
-              <Link to="/" className="nav-link" onClick={closeMenu}>
+              <Link to="/Airdrop" className="nav-link" onClick={closeMenu}>
                 Airdrop
               </Link>
             </div>
