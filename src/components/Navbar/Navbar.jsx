@@ -124,6 +124,11 @@ const Navbar = () => {
                 Pool
               </Link>
             </div>
+            <div className="n-item">
+              <Link to="/" className="nav-link" onClick={closeMenu}>
+                Airdrop
+              </Link>
+            </div>
           </div>
         </div>
         <div className="header-right">
@@ -147,10 +152,12 @@ const Navbar = () => {
                 Launchpad<i className="iconfont icon-icons-launchpad"></i>
               </li>
               <li className="n-item" style={{ display: "none" }}>
-                Earning
+                Farms
               </li>
               <li className="n-item" style={{ display: "none" }}>
-                Bridge
+                Pool
+              </li><li className="n-item" style={{ display: "none" }}>
+                Airdrop
               </li>
             </ul>
           </div>
