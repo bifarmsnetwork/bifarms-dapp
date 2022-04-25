@@ -53,7 +53,7 @@ const Navbar = () => {
       console.log("Wallet disconnect called");
       await web3Modal().clearCachedProvider();
       refreshState();
-      window.location.reload();
+      // window.location.reload();
     } catch (error) {
       console.error(error);
     }
