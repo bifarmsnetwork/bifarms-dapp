@@ -67,7 +67,7 @@ const Airdrop = () => {
                   <div className="abutton-div">
                     <div className="ido-with-whitelist">
                       <div className="aido-btn-detail linear-btn">
-                        <Link to="/details" style={{ textDecoration: 'none' }}>
+                        <Link to="/" style={{ textDecoration: 'none' }}>
                         <div className="ido-btn-white-list"> Claim Airdrop </div>
                         </Link>
                         

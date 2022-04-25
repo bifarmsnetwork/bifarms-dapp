@@ -532,7 +532,7 @@
     align-items: center;
     justify-content: center;
     transition: 0.3s;
-    animation: mymove 5s infinite;
+    animation: mymove 1s infinite;
     animation-timing-function: linear;
     visibility: visible;
     z-index: 40;
