@@ -290,7 +290,7 @@ const Details = () => {
                       <div className="status"><div className="perch_detail moving_image">
                             <div className="perch_center_detail"></div>
                           </div>
-                        <span>Live</span>
+                        <span className="bg_transparent">Live</span>
                       </div>
                       <div className="chain-info">
                         <img src="" alt="" />

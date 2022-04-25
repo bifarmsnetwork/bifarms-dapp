@@ -27,18 +27,18 @@ const Airdrop = () => {
           <div className="alist">
             {/* Item 1 */}
             <div className={toggleState === 1 ? "aitem" : "no-item"}>
-              <div className="item-container">
+              <div className="aitem-container">
                 <div className="right">
                   <div className="atop-div">
                     <div className="aleft_side">
                       <div>
                         <img src={Coin} alt="logo" className="alogo" />
                       </div>
-                      <div className="aname_div">
+                      <div className="aname_div margin_top_btn2">
                         <p className="aido-name">BiFarms Airdrop | FCFS</p>
                         <p className="aido-name">
                           <span className="color_grey">Check:</span>{" "}
-                          <a className = "color_hover" href="https://bifarms.network/WinnersList.xlsx">
+                          <a className = "theme_color color_hover" href="https://bifarms.network/WinnersList.xlsx">
                             Whitelist
                           </a>
                         </p>
@@ -46,14 +46,14 @@ const Airdrop = () => {
                           <span className="color_grey">
                               Token Address:
                           </span>{" "}
-                            <a className = "color_hover" href="https://bscscan.com/address/0xbbf8c8f9b79808be0bc8d24f2c7a5111b47e230b#code">
-                          {account}
+                            <a className = "theme_color color_hover" href="https://bscscan.com/address/0xbbf8c8f9b79808be0bc8d24f2c7a5111b47e230b#code">0xbbf8c8f9b79808be0bc8d24f2c7a5111b47e230b
+                          <span style={{display: "none"}}>{account}</span>
                             </a>
                         </p>
                       </div>
                     </div>
 
-                    <div className="abutton-div">
+                    <div className="abutton-div margin_top_btn">
                       <div className="ido-with-whitelist">
                         <div className="aido-btn-detail linear-btn">
                           {/* <Link to="/" style={{ textDecoration: 'none' }}> */}

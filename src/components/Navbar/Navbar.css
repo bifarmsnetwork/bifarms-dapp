@@ -128,7 +128,7 @@
 }
 
 .disconnect{
-    background-color: inherit;
+    background-color: transparent;
     border: none;
     color: #fff;
     cursor:pointer;
@@ -136,7 +136,7 @@
 
 
 .connect{
-    background-color: inherit;
+    background-color: transparent;
     border: none;
     color: #fff;
     cursor:pointer;

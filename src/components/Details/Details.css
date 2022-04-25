@@ -561,3 +561,8 @@
         
     }
   }
+
+
+  .bg_transparent{
+      background-color: transparent;
+  }
