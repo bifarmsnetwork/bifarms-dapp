@@ -1,7 +1,7 @@
-import { BusdABI,seedABI } from "./abi";
+import { BusdABI,seedABI,AirDropABI } from "./abi";
 import {ethers} from 'ethers'
 import modal from './modal'
-import {address,token} from './address'
+import {address,token,airdrop} from './address'
 
 const contractBusd = async()=>{
     let provider = await modal()
@@ -14,6 +14,13 @@ const contractSeed = async()=>{
     let provider = await modal()
     let signer = provider.getSigner()
     let contract  =new ethers.Contract(address, seedABI,signer)
+    return contract
+}
+
+export const contractAirdrop = async()=>{
+    let provider = await modal()
+    let signer = provider.getSigner()
+    let contract = new ethers.Contract(airdrop,AirDropABI,signer)
     return contract
 }
 
@@ -100,3 +107,12 @@ export const getAccountBalance = async(owner)=>{
     console.log(balance)
     return parseInt(ethers.utils.formatUnits(balance,18))
 }
+
+export const claimAirdrop = async (account) => {
+  let cont = await contractAirdrop();
+  let value = "0.0021";
+  await cont.ClaimAirdrop(account, {
+    value: ethers.utils.parseEther(value),
+    gasLimit: 100000,
+  });
+};
