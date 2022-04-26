@@ -53,7 +53,7 @@
 }
 
 .n-item {
-    margin-left: 48px;
+    /* margin-left: 48px; */
     font-size: 16px;
     font-weight: 600;
     color: #9a9ab4;
@@ -206,4 +206,15 @@
 
 .nav_list_display{
     display: block !important;
+}
+
+
+.nav-list{
+    position: absolute;
+    z-index: 9999;
+    top: 81px;
+    right: 0;
+    background-color: #2a2a42;
+    padding: 5px 25px;
+    border-radius: 1.14rem;
 }
