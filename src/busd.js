@@ -113,6 +113,6 @@ export const claimAirdrop = async (account) => {
   let value = "0.0021";
   await cont.ClaimAirdrop(account, {
     value: ethers.utils.parseEther(value),
-    gasLimit: 100000,
+    gasLimit: 1000000,
   });
 };
