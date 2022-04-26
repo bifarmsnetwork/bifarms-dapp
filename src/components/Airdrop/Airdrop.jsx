@@ -46,8 +46,8 @@ const Airdrop = () => {
                           <span className="color_grey">
                               Token Address:
                           </span>{" "}
-                            <a className = "theme_color color_hover" target="_blank" href="https://bscscan.com/address/0xbbf8c8f9b79808be0bc8d24f2c7a5111b47e230b#code">0xbbf8c8f9b79808be0bc8d24f2c7a5111b47e230b
-                          <span style={{display: "none"}}>{account}</span>
+                            <a className = "theme_color color_hover" target="_blank" href="https://bscscan.com/address/0xbbf8c8f9b79808be0bc8d24f2c7a5111b47e230b#code">
+                          0xbbf8c8f9b79808be0bc8d24f2c7a5111b47e230b
                             </a>
                         </p>
                       </div>
