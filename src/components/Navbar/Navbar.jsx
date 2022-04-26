@@ -14,6 +14,7 @@ const Navbar = () => {
   const [provider, setProvider] = useState();
   const [error, setError] = useState();
   // const [account, setAccount] = useState();
+  const [modal,showModal] = useState(false)
   const [width,setWidth] = useState(window.innerWidth)
   let breakpoint = 1000
 
@@ -53,7 +54,7 @@ const Navbar = () => {
       console.log("Wallet disconnect called");
       await web3Modal().clearCachedProvider();
       refreshState();
-      window.location.reload();
+      // window.location.reload();
     } catch (error) {
       console.error(error);
     }
@@ -96,6 +97,11 @@ const Navbar = () => {
     return ()=>window.removeEventListener('resize',handleLogo)
   },[])
   
+  const flipNav = ()=>{
+    showModal(!modal)
+    console.log(modal)
+  }
+
 
   return (
     <div className="header">
@@ -109,22 +115,22 @@ const Navbar = () => {
             )}
           </Link>
           <div className="nav">
-            <div className="n-item">
+            <div className="n-item n-margin">
               <Link to="/" className="nav-link" onClick={closeMenu}>
                 Launchpad
               </Link>
             </div>
-            <div className="n-item">
+            <div className="n-item n-margin">
               <Link to="/" className="nav-link" onClick={closeMenu}>
                 Farms
               </Link>
             </div>
-            <div className="n-item">
+            <div className="n-item n-margin">
               <Link to="/" className="nav-link" onClick={closeMenu}>
                 Pool
               </Link>
             </div>
-            <div className="n-item">
+            <div className="n-item n-margin">
               <Link to="/Airdrop" className="nav-link" onClick={closeMenu}>
                 Airdrop
               </Link>
@@ -145,21 +151,31 @@ const Navbar = () => {
           </div>
           <div className="more-nav">
             <button style={{ backgroundColor: "transparent", border: "none" }}>
-              <img src={Dots} alt="Nav" onClick="{flipNav}" />
+              <img src={Dots} alt="Nav" onClick={flipNav} />
             </button>
-            <ul id="nav-list" className="nav-list" style={{ display: "none" }}>
-              <li className="n-item select-tab" style={{ display: "none" }}>
-                Launchpad<i className="iconfont icon-icons-launchpad"></i>
+            {modal?<ul id="nav-list" className="nav-list">
+              <li className="n-item select-tab" >
+               <Link to="/" className="nav-link" onClick={closeMenu}>
+                Launchpad
+              <i className="iconfont icon-icons-launchpad"></i>
+              </Link>
               </li>
-              <li className="n-item" style={{ display: "none" }}>
+              <li className="n-item" >
+                <Link to="/" className="nav-link" onClick={closeMenu}>
                 Farms
+              </Link>
               </li>
-              <li className="n-item" style={{ display: "none" }}>
+              <li className="n-item" >
+               <Link to="/" className="nav-link" onClick={closeMenu}>
                 Pool
-              </li><li className="n-item" style={{ display: "none" }}>
-                Airdrop
+              </Link>
               </li>
-            </ul>
+              <li className="n-item" >
+               <Link to="/Airdrop" className="nav-link" onClick={closeMenu}>
+                Airdrop
+              </Link>
+              </li>
+            </ul>:null}
           </div>
         </div>
       </div>

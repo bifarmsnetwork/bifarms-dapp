@@ -109,11 +109,12 @@
  margin: 0 auto;
 }
 
-.item-container {
+.aitem-container {
     padding: 35px 26px;
     display: flex;
     flex-direction: column;
 }
+
 
 .left {
     position: relative;
@@ -124,10 +125,10 @@
 }
 
 .alogo {
-    width: 40px;
-    height: 40px;
-    background-color: #fff;
-    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    /* background-color: #fff;
+    border-radius: 50%; */
 }
 
 .chain-info {
@@ -173,6 +174,18 @@
         align-items: center;
         justify-content: space-between;
     }
+
+    .alogo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .aitem-container {
+        padding: 35px auto;
+        
+    }
+    
+
 }
 
 
@@ -183,6 +196,7 @@
     line-height: 45px;
     margin: auto;
     text-shadow: 0 1px 1px #1b1b31;
+    line-break: anywhere;
 }
 
 .amount-container {
@@ -295,13 +309,11 @@
 .ido-with-whitelist {
     display: flex;
     justify-content: center;
-    
-    
-    
 }
 .ido-btn-white-list {
     color: #fff;
     cursor:pointer;
+    background-color: transparent;
 }
 .aido-btn-detail {
    width: auto;
@@ -366,20 +378,6 @@
     width: auto;
 }
 
-
-@media (max-width: 895px) {
-    .aleft_side{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: auto;
-    }
-    
-}
-
-
-
 .aname_div{
     padding-left: 25px;
 }
@@ -388,3 +386,38 @@
 .color_grey{
     color: #9a9ab4;
 }
+
+.color_hover:hover{
+    color:#1989e4
+}
+
+
+
+@media (max-width: 895px) {
+    .aleft_side{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: auto;
+    }
+    .aitem {
+        width: auto;
+    }
+    .margin_top_btn{
+        margin-top: 69px;
+    }
+    
+    .margin_top_btn2{
+        margin-top: 50px;
+    }
+
+
+    .aname_div{
+        padding-left: 0px;
+    }
+    
+}
+
+
+
