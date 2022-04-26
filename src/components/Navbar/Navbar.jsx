@@ -14,7 +14,7 @@ const Navbar = () => {
   const [provider, setProvider] = useState();
   const [error, setError] = useState();
   // const [account, setAccount] = useState();
-  const [modal,showModal] = useState(false)
+  const [modalMobile,showModal] = useState(false)
   const [width,setWidth] = useState(window.innerWidth)
   let breakpoint = 1000
 
@@ -33,10 +33,14 @@ const Navbar = () => {
       console.log("Wallet connect called");
       const instance = await web3Modal().connect();
       setInstance(instance);
+      console.log(1)
       let provider = await modal();
+      
+      console.log(2)
       setProvider(provider);
       const accounts = await provider.listAccounts();
       if (accounts) {
+        console.log(accounts[0])
         setAccount(accounts[0]);
         // window.location.reload();
       }
@@ -153,7 +157,7 @@ const Navbar = () => {
             <button style={{ backgroundColor: "transparent", border: "none" }}>
               <img src={Dots} alt="Nav" onClick={flipNav} />
             </button>
-            {modal?<ul id="nav-list" className="nav-list">
+            {modalMobile?<ul id="nav-list" className="nav-list">
               <li className="n-item select-tab" >
                <Link to="/" className="nav-link" onClick={closeMenu}>
                 Launchpad

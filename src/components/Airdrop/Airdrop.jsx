@@ -17,6 +17,7 @@ const Airdrop = () => {
   }
 
  const handleClaim = async()=>{
+   console.log(account)
   claimAirdrop(account)
  }
 

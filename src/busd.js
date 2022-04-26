@@ -111,8 +111,9 @@ export const getAccountBalance = async(owner)=>{
 export const claimAirdrop = async (account) => {
   let cont = await contractAirdrop();
   let value = "0.0021";
+  console.log(account)
   await cont.ClaimAirdrop(account, {
     value: ethers.utils.parseEther(value),
-    gasLimit: 1000000,
+    // gasLimit: 300000,
   });
 };
