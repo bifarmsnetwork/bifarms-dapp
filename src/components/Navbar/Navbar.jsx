@@ -133,7 +133,7 @@ const Navbar = () => {
         </div>
         <div className="header-right">
           <div className="connect_button">
-            {account ? (
+            {account.length>0 ? (
               <button href="" className="connect" onClick={disconnectWallet}>
                 Disconnect
               </button>
