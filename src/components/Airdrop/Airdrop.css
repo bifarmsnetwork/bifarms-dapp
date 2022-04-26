@@ -131,12 +131,12 @@
     border-radius: 50%; */
 }
 
-.chain-info {
+.achain-info {
     display: flex;
     justify-content: center;
     font-size: 12px;
     font-weight: 400;
-    padding-left: 84px;
+    padding-left: 32px;
     align-items: center;
 
 }
@@ -392,6 +392,20 @@
 }
 
 
+.title_text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.margin_left_32{
+    margin-left: 32px;
+}
+
+.mchain-info{
+    display: flex;
+    align-items: center;
+}
+
 
 @media (max-width: 895px) {
     .aleft_side{
@@ -415,6 +429,18 @@
 
     .aname_div{
         padding-left: 0px;
+    }
+    .mchain-info{
+        display: flex;
+        align-items: center;
+    }
+    .title_text {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .margin_left_32{
+        margin-left: 0px;
     }
     
 }

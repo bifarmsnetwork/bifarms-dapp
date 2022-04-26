@@ -37,7 +37,31 @@ const Airdrop = () => {
                         <img src={Coin} alt="logo" className="alogo" />
                       </div>
                       <div className="aname_div margin_top_btn2">
-                        <p className="aido-name">BiFarms Airdrop | FCFS</p>
+                        
+                        <div className="title_text">
+                          <div>
+                          <p className="aido-name">BiFarms Airdrop | FCFS</p>
+                          </div>
+                          <div className="mchain-info">
+                              <div className="status margin_left_32"><div className="perch_detail moving_image">
+                                <div className="perch_center_detail"></div>
+                                </div>
+                                <span className="bg_transparent">Live</span>
+                              </div>
+                              <div className="achain-info">
+                                <img
+                                  src="https://bifarms.network/img/BSC.png"
+                                  alt=""
+                                  className="chain-logo"
+                                />
+                                <div className="chain-name">BSC</div>
+                              </div> 
+                          </div>
+
+                        </div>
+
+
+
                         <p className="aido-name">
                           <span className="color_grey">Check:</span>{" "}
                           <a className = "theme_color color_hover" href="https://bifarms.network/WinnersList.xlsx">
