@@ -102,8 +102,7 @@ const Navbar = () => {
   },[])
   
   const flipNav = ()=>{
-    showModal(!modal)
-    console.log(modal)
+    showModal(!modalMobile)
   }
 
 
