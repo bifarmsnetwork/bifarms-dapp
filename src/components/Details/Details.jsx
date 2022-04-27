@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import "../Launchpad/Launchpad.css";
 import "./Details.css";
 import coinLogo from "../../images/Untitled-1.svg";
-import { approve, getDeposit, checkApprove,claimInitialToken,claimToken,checkDeposit,checkBalance,checkAmount,getAccountBalance} from "../../busd";
+import { approve, checkApprove,getAccountBalance} from '../../contracts/busd'
+import {getDeposit, claimInitialToken,claimToken,checkDeposit,checkBalance,checkAmount,} from "../../contracts/seed";
+import {seed} from '../../address'
 import modal from "../../modal";
 import { NetworkContext } from "../../context/NetworkContext";
 
@@ -19,7 +21,7 @@ const Details = () => {
     // let provider = await modal();
     // const accounts = await provider.listAccounts();
     if (account) {
-      let value = await checkApprove(account);
+      let value = await checkApprove(account,seed);
       console.log(value.toString());
       if (parseInt(value.toString()) > 0) setStatus(true);
       else setStatus(false);
@@ -39,7 +41,7 @@ const Details = () => {
     let bool = await handleCheckApprove();
     console.log(bool);
     if (!bool) {
-      let res = await approve();
+      let res = await approve(seed);
       let confirmation = res.wait();
       if (confirmation.blockNumber) setStatus(true);
     }

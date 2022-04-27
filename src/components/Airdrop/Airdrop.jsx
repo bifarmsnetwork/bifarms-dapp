@@ -4,7 +4,7 @@ import Coin from "../../images/coin.svg";
 import noItem from "../../images/no_item.png";
 import "./Airdrop.css";
 import { NetworkContext } from "../../context/NetworkContext";
-import {claimAirdrop} from "../../busd"
+import {claimAirdrop} from "../../contracts/airdrop"
 import {truncateAddress} from '../../utils'
 
 

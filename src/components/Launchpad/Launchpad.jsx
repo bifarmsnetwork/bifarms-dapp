@@ -7,7 +7,7 @@ import "./Launchpad.css";
 import modal,{web3Modal} from "../../modal";
 import { seedABI } from "../../abi";
 import {ethers} from 'ethers'
-import {address} from '../../address'
+import {seed} from '../../address'
 
 const Launchpad = () => {
   // let address = "0x1868819e052D2daA9a9e770AdB9e175188343971"
@@ -22,7 +22,7 @@ const Launchpad = () => {
   useEffect(()=>{
     async function handleContract(){
       let provider = await modal()
-      let contract = new ethers.Contract(address, seedABI,provider)
+      let contract = new ethers.Contract(seed, seedABI,provider)
       console.log(contract)
       // setContract(contract)
       let deposit = await contract.totalDeposit()
@@ -31,7 +31,7 @@ const Launchpad = () => {
       setDeposit(parseInt(ethers.utils.formatUnits(deposit,18)))
     }
     handleContract()
-  },[address])
+  },[])
 
   // console.log(deposit)
   
