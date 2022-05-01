@@ -124,13 +124,15 @@ const Navbar = () => {
               </Link>
             </div>
             <div className="n-item n-margin">
-              <Link to="/" className="nav-link" onClick={closeMenu}></Link>
+              <Link to="/Farms" className="nav-link" onClick={closeMenu}>
                 Farms
+              </Link>
               
             </div>
             <div className="n-item n-margin">
-              <Link to="/" className="nav-link" onClick={closeMenu}></Link>
+              <Link to="/Pools" className="nav-link" onClick={closeMenu}>
                 Pool
+              </Link>
               
             </div>
             <div className="n-item n-margin">
@@ -164,13 +166,15 @@ const Navbar = () => {
               </Link>
               </li>
               <li className="n-item" >
-                <Link to="/" className="nav-link" onClick={closeMenu}></Link>
+                <Link to="/Farms" className="nav-link" onClick={closeMenu}>
                 Farms
+                </Link>
               
               </li>
               <li className="n-item" >
-               <Link to="/" className="nav-link" onClick={closeMenu}></Link>
+               <Link to="/Pools" className="nav-link" onClick={closeMenu}>
                 Pool
+               </Link>
               
               </li>
               <li className="n-item" >
