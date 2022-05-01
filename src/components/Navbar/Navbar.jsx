@@ -74,8 +74,8 @@ const Navbar = () => {
     if (instance?.on) {
       const handleAccountsChanged = (accounts) => {
         console.log("accountsChanged", accounts);
-        if (accounts) connectWallet() 
-        //  setAccount(accounts[0]);
+        if (accounts) {connectWallet() 
+         setAccount(accounts[0]);}
       };
 
       const handleDisconnect = () => {
