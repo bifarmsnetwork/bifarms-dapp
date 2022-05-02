@@ -1,5 +1,5 @@
 import React from "react";
-import { data } from "./pools";
+import { data } from "../../data/pools";
 
 const Pools = () => {
   return (

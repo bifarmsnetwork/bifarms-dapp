@@ -1,5 +1,5 @@
 import React from "react";
-import { data } from "./farms";
+import { data } from "../../data/farms";
 
 const Farms = ()=>{
     return(
