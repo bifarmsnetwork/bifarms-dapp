@@ -8,12 +8,15 @@ const Pools = () => {
         return (
         // Write html below
         <div>
-            {token}
-            {apy}
-            {daily}
-            {tvl}
-            {network}
-        </div>);
+           
+
+
+           
+        </div>
+        
+        
+        
+        );
       })}
     </div>
   );
