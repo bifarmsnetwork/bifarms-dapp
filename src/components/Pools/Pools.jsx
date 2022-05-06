@@ -39,11 +39,11 @@ const Pools = () => {
                           
                         </div>
                         <div className="jssp202">
-                          <div style={{ paddingTop: "15px" }}>BFS-BUSD LP</div>
+                          <div style={{ paddingTop: "15px" }}>BFS</div>
                           <div style={{ fontSize: "10px", color: "grey" }}>
-                            Uses: PancakeSwap
+                            Uses: Bifarms Network
                           </div>
-                          <div>Buy token Add Liquidity</div>
+                          <div>Buy token</div>
                         </div>
                       </div>
                     </div>
@@ -59,17 +59,17 @@ const Pools = () => {
                       </div>
 
                       <div className="jssp204">
-                        <div>24.03%</div>
+                        <div>1.60%</div>
                         <div>APY</div>
                       </div>
 
                       <div className="jssp204">
-                        <div>0.0590%</div>
+                        <div>0.0044%</div>
                         <div>Daily</div>
                       </div>
 
                       <div className="jssp204">
-                        <div>$22.73k</div>
+                        <div>$27.90M</div>
                         <div>TVL</div>
                       </div>
                     </div>
