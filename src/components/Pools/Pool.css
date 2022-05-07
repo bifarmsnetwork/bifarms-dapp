@@ -1,4 +1,4 @@
-.el-main {
+.pool-main {
     
     box-sizing: border-box;
     display: block;
@@ -6,7 +6,7 @@
     flex-basis: auto;
     overflow: auto;
     width: 100%;
-    padding: 80px 0 0;
+    padding: 10px 0 0;
     position: relative;
     min-height: calc(100vh - 255px);
     background-color: #09162e;

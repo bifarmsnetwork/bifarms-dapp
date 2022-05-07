@@ -11,7 +11,7 @@ const Pool = ({ token, apy, daily, tvl, network, img }) => {
         return (
           // Write html below */}
           <div>
-            <div className="el-main">
+            <div className="pool-main">
               <div className="aido">
                 <div style={{ marginBottom: "20px" }}>
                   <div className="accordion">

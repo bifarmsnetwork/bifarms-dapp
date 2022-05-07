@@ -12,7 +12,7 @@ const Farm = ({ pair, apy, daily, tvl, network, img1, img2 }) => {
     <>
       {/* {data.map(({ pair, apy, daily, tvl, network, img1, img2 }) => {
         return ( */}
-          <div className="el-main" style={{minHeight:'0px'}}>
+          <div className="Farm-main margin25" style={{minHeight:'0px'}}>
             <div className="aido">
               <div style={{ marginBottom: "20px" }}>
                 <div className="accordion">
