@@ -47,29 +47,29 @@ const Pool = ({ token, apy, daily, tvl, network, img }) => {
                             </div>
                           </div>
                           <div className="wallet_info jssp213">
-                            <div className="jssp204">
-                              <div>0</div>
-                              <div>Wallet</div>
+                            <div className="jssp214">
+                               <div className="jssp204">
+                                 <div>0</div>
+                                 <div>Wallet</div>
+                               </div>
+                                <div className="jssp204">
+                                 <div>0</div>
+                                 <div>Deposited</div>
+                               </div>
                             </div>
-
-                            <div className="jssp204">
-                              <div>0</div>
-                              <div>Deposited</div>
-                            </div>
-
-                            <div className="jssp204">
-                              <div>{apy}</div>
-                              <div>APY</div>
-                            </div>
-
-                            <div className="jssp204">
-                              <div>{daily}</div>
-                              <div>Daily</div>
-                            </div>
-
-                            <div className="jssp204">
-                              <div>{tvl}</div>
-                              <div>TVL</div>
+                            <div className="jssp214">
+                               <div className="jssp204">
+                                 <div>{apy}</div>
+                                 <div>APY</div>
+                               </div>
+                             <div className="jssp204">
+                                 <div>{daily}</div>
+                                 <div>Daily</div>
+                               </div>
+                             <div className="jssp204">
+                                 <div>{tvl}</div>
+                                 <div>TVL</div>
+                               </div>
                             </div>
                           </div>
                         </div>
@@ -85,16 +85,16 @@ const Pool = ({ token, apy, daily, tvl, network, img }) => {
                                 <input type="text" placeholder="0.0" value="" />
                                 {/* <span className="ct1-max"> MAX</span> */}
                               </div>
-                              <div className="approve">Approve</div>
+                              <div className="approve fmsize">Approve</div>
                             </div>
 
-                            <div className="jssp205">
+                            <div className="jssp205 margin25">
                               <div className="ct1-input">
                                 <input type="text" placeholder="0.0" value="" />
                                 {/* <span className="ct1-max"> MAX</span> */}
                               </div>
                               <div className="claim_box">
-                                <div className="pool_claim">Withdraw</div>
+                                <div className="pool_claim" style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>Withdraw</div>
                                 <div className="pool_claim">Withdraw All</div>
                               </div>
                             </div>
