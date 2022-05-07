@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./Farms.css";
+import "./../Private/Private.css";
+import "./../Details/Details.css";
 import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
 // import { data } from "../../data/farms";
 
@@ -50,33 +52,37 @@ const Farm = ({ pair, apy, daily, tvl, network, img1, img2 }) => {
                           </div>
                         </div>
                         <div className="wallet_info jss213">
-                          <div className="jss204">
-                            <div>0</div>
-                            <div>Wallet</div>
+                          <div className="jss214">
+                            <div className="jss204">
+                              <div>0</div>
+                              <div>Wallet</div>
+                            </div>
+        
+                            <div className="jss204">
+                              <div>0</div>
+                              <div>Deposited</div>
+                            </div>
+                          </div>
+                          <div className="jss214">
+                            <div className="jss204">
+                              <div>{apy}</div>
+                              <div>APY</div>
+                            </div>
+        
+                            <div className="jss204">
+                              <div>{daily}</div>
+                              <div>Daily</div>
+                            </div>
+                            <div className="jss204">
+                              <div>{tvl}</div>
+                              <div>TVL</div>
+                            </div>
                           </div>
 
-                          <div className="jss204">
-                            <div>0</div>
-                            <div>Deposited</div>
-                          </div>
-
-                          <div className="jss204">
-                            <div>{apy}</div>
-                            <div>APY</div>
-                          </div>
-
-                          <div className="jss204">
-                            <div>{daily}</div>
-                            <div>Daily</div>
-                          </div>
-
-                          <div className="jss204">
-                            <div>{tvl}</div>
-                            <div>TVL</div>
-                          </div>
+                          
                         </div>
                       </div>
-                      <div>
+                      <div className="ml">
                         {isActive ? <AiFillCaretUp /> : <AiFillCaretDown />}
                       </div>
                     </div>
@@ -86,19 +92,19 @@ const Farm = ({ pair, apy, daily, tvl, network, img1, img2 }) => {
                           <div className="jss205">
                             <div className="ct1-input">
                               <input type="text" placeholder="0.0" value="" />
-                              <span className="ct1-max"> MAX</span>
+                              {/* <span className="ct1-max"> MAX</span> */}
                             </div>
-                            <div className="approve">Approve</div>
+                            <div className="approve fmsize">Approve</div>
                           </div>
 
-                          <div className="jss205">
+                          <div className="jss205 margin25">
                             <div className="ct1-input">
                               <input type="text" placeholder="0.0" value="" />
-                              <span className="ct1-max"> MAX</span>
+                              {/* <span className="ct1-max"> MAX</span> */}
                             </div>
                             <div className="claim_box">
-                              <div className="claim">Withdraw</div>
-                              <div className="claim">Withdraw All</div>
+                              <div className="farm-claim" style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>Withdraw</div>
+                              <div className="farm-claim">Withdraw All</div>
                             </div>
                           </div>
                         </div>

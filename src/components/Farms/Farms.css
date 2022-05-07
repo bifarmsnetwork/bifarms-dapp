@@ -164,6 +164,7 @@ margin: 0 25px;
     flex-wrap: wrap;
     margin-top: 70px;
     justify-content: space-around;
+    align-items: flex-end;
 }
 
 .jss205{
@@ -173,3 +174,55 @@ margin: 0 25px;
 .jss204 div{
   margin-top: 15px;
   }
+
+
+.farm-claim{
+  height: auto;
+    /* line-height: 52px; */
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    background-image: linear-gradient(180deg , #10a3d7 , #2669f5);
+    width: 46%;
+    padding: 10px 16px;
+}
+
+
+.jss214{
+  display: flex;
+}
+
+@media (max-width: 1000px) {
+  .jss214 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .jss213{
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .jss204{
+    margin: 3.8rem 1.4rem 0;
+  }
+  .farm-claim, .fmsize{
+    font-size: 13px !important;
+  }
+  .ml{
+    
+    margin-left: -10px;
+
+  }
+}
+
+.margin25{
+  margin-top: 25px;
+}
+
+

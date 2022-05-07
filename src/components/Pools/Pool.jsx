@@ -83,7 +83,7 @@ const Pool = ({ token, apy, daily, tvl, network, img }) => {
                             <div className="jssp205">
                               <div className="ct1-input">
                                 <input type="text" placeholder="0.0" value="" />
-                                <span className="ct1-max"> MAX</span>
+                                {/* <span className="ct1-max"> MAX</span> */}
                               </div>
                               <div className="approve">Approve</div>
                             </div>
@@ -91,11 +91,11 @@ const Pool = ({ token, apy, daily, tvl, network, img }) => {
                             <div className="jssp205">
                               <div className="ct1-input">
                                 <input type="text" placeholder="0.0" value="" />
-                                <span className="ct1-max"> MAX</span>
+                                {/* <span className="ct1-max"> MAX</span> */}
                               </div>
                               <div className="claim_box">
-                                <div className="claim">Withdraw</div>
-                                <div className="claim">Withdraw All</div>
+                                <div className="pool_claim">Withdraw</div>
+                                <div className="pool_claim">Withdraw All</div>
                               </div>
                             </div>
                           </div>
