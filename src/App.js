@@ -8,6 +8,7 @@ import Navbar from './components/Navbar/Navbar';
 import Airdrop from './components/Airdrop/Airdrop.jsx';
 import Farms from './components/Farms/Farms';
 import Pools from './components/Pools/Pools';
+import Private from './components/Private/Private';
 import { NetworkProvider } from './context/NetworkContext';
 
 
@@ -23,6 +24,7 @@ const App = () => {
       <Route path="/Farms" element = {<Farms/>}/>
       <Route path="/Pools" element = {<Pools/>}/>
       <Route path="/Airdrop" element = {<Airdrop/>}/>
+      <Route path="/Private" element={<Private />} />
     </Routes>
     <Footer/>
     </NetworkProvider>
