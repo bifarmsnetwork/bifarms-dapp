@@ -22,7 +22,7 @@ const Details = () => {
     // const accounts = await provider.listAccounts();
     if (account) {
       let value = await checkApprove(account,seed);
-      console.log(value.toString());
+      // console.log(value.toString());
       if (parseInt(value.toString()) > 0) setStatus(true);
       else setStatus(false);
       return status;
@@ -308,7 +308,7 @@ const Details = () => {
                         <div className="amount-title">Time</div>
                         <div className="amount-value">
                           <div className="start-time time">
-                          <div class="perch"><div class="perch-center"></div></div>
+                          <div className="perch"><div className="perch-center"></div></div>
                             2022.04.12 09:00 AM UTC
                           </div>
                           <div className="end-time time">

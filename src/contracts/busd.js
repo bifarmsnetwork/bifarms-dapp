@@ -19,8 +19,10 @@ export const approve = async(seed)=>{
 export const checkApprove = async(owner,seed)=>{
     let cont = await contractBusd()
     console.log(cont,owner)
-    let result = await cont.allowance(owner,seed)
-    return result
+    if(owner.length>0){
+        let result = await cont.allowance(owner,seed)
+        return result
+    }
 }
 
 export const getAccountBalance = async(owner)=>{
