@@ -255,6 +255,7 @@
     margin-top: 20px;
     background-image: linear-gradient(180deg , #10a3d7 , #2669f5);
     padding: 10px 16px;
+    width:100% !important
 
 }
 

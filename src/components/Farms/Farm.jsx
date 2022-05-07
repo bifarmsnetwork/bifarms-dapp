@@ -3,6 +3,7 @@ import "./Farms.css";
 import "./../Private/Private.css";
 import "./../Details/Details.css";
 import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
+import ReactSlider from '../Slider'
 // import { data } from "../../data/farms";
 
 const Farm = ({ pair, apy, daily, tvl, network, img1, img2 }) => {
@@ -94,7 +95,10 @@ const Farm = ({ pair, apy, daily, tvl, network, img1, img2 }) => {
                               <input type="text" placeholder="0.0" value="" />
                               {/* <span className="ct1-max"> MAX</span> */}
                             </div>
-                            <div className="approve fmsize">Approve</div>
+                              <ReactSlider/>
+                              <div className="claim_box">
+                              <div className="approve fmsize">Approve</div>
+                              </div>
                           </div>
 
                           <div className="jss205 margin25">
@@ -102,6 +106,7 @@ const Farm = ({ pair, apy, daily, tvl, network, img1, img2 }) => {
                               <input type="text" placeholder="0.0" value="" />
                               {/* <span className="ct1-max"> MAX</span> */}
                             </div>
+                              <ReactSlider/>
                             <div className="claim_box">
                               <div className="farm-claim" style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>Withdraw</div>
                               <div className="farm-claim">Withdraw All</div>

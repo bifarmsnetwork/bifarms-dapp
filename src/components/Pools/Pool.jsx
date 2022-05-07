@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Pool.css";
 import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
+import ReactSlider from '../Slider'
 
 const Pool = ({ token, apy, daily, tvl, network, img }) => {
   const [isActive, setIsActive] = useState(false);
@@ -85,7 +86,10 @@ const Pool = ({ token, apy, daily, tvl, network, img }) => {
                                 <input type="text" placeholder="0.0" value="" />
                                 {/* <span className="ct1-max"> MAX</span> */}
                               </div>
+                              <ReactSlider/>
+                              <div className="claim_box">
                               <div className="approve fmsize">Approve</div>
+                              </div>
                             </div>
 
                             <div className="jssp205 margin25">
@@ -93,6 +97,7 @@ const Pool = ({ token, apy, daily, tvl, network, img }) => {
                                 <input type="text" placeholder="0.0" value="" />
                                 {/* <span className="ct1-max"> MAX</span> */}
                               </div>
+                              <ReactSlider/>
                               <div className="claim_box">
                                 <div className="pool_claim" style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>Withdraw</div>
                                 <div className="pool_claim">Withdraw All</div>
