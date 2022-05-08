@@ -299,7 +299,7 @@ const Private = () => {
                         <div className="amount-title">Time</div>
                         <div className="amount-value">
                           <div className="start-time time">
-                          <div class="perch"><div class="perch-center"></div></div>
+                          <div className="perch"><div className="perch-center"></div></div>
                             {/* 2022.04.12 09:00 AM UTC */}
                             Coming Soon
                           </div>

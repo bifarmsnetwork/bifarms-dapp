@@ -1,4 +1,4 @@
-.el-main {
+.Farm-main {
     
     box-sizing: border-box;
     display: block;
@@ -6,7 +6,7 @@
     flex-basis: auto;
     overflow: auto;
     width: 100%;
-    padding: 80px 0 0;
+    padding: 10px 0 0;
     position: relative;
     min-height: calc(100vh - 255px);
     background-color: #09162e;
@@ -85,7 +85,7 @@ margin: 0 25px;
   .jss189{
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
   }
 
   
@@ -101,6 +101,7 @@ margin: 0 25px;
     flex-shrink: 0;
     flex-direction: row;
     justify-content: center;
+    margin-top: 16px;
 }
   
   .jss190{
@@ -108,7 +109,7 @@ margin: 0 25px;
     cursor: pointer;
     height: 60px;
     margin-right: 8px;
-    transform: rotate(45deg);
+    /* transform: rotate(45deg); */
 
   }
 
@@ -129,10 +130,11 @@ margin: 0 25px;
 .jss310 .jcss311:first-child {
     left: 0;
     z-index: 2;
+    margin-bottom: 34px;
 }
 
 .jss310 .jcss311:last-child {
-    right: -12px;
+    right: -9px;
     z-index: 1;
 }
 
@@ -164,6 +166,7 @@ margin: 0 25px;
     flex-wrap: wrap;
     margin-top: 70px;
     justify-content: space-around;
+    align-items: flex-end;
 }
 
 .jss205{
@@ -173,3 +176,60 @@ margin: 0 25px;
 .jss204 div{
   margin-top: 15px;
   }
+
+
+.farm-claim{
+  height: auto;
+    /* line-height: 52px; */
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    background-image: linear-gradient(180deg , #10a3d7 , #2669f5);
+    width: 46%;
+    padding: 10px 16px;
+}
+
+
+.jss214{
+  display: flex;
+}
+
+@media (max-width: 1000px) {
+  .jss214 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .jss213{
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .jss204{
+    margin: 3.8rem 1.4rem 0;
+  }
+  .farm-claim, .fmsize, .pool_claim{
+    font-size: 13px !important;
+  }
+  .ml{
+    
+    margin-left: -10px;
+
+  }
+}
+
+.margin25{
+  margin-top: 25px;
+}
+
+
+@media (max-width: 389px) {
+  .jss204{
+    margin: 3.8rem 0.9rem 0;
+  }  
+}
