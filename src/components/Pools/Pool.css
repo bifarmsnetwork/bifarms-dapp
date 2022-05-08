@@ -219,3 +219,9 @@ margin-top: 15px;
 
   }
 }
+
+@media (max-width: 389px) {
+  .jssp204{
+    margin: 3.8rem 0.9rem 0;
+  }  
+}

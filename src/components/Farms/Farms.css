@@ -228,3 +228,8 @@ margin: 0 25px;
 }
 
 
+@media (max-width: 389px) {
+  .jss204{
+    margin: 3.8rem 0.9rem 0;
+  }  
+}

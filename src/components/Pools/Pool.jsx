@@ -74,7 +74,7 @@ const Pool = ({ token, apy, daily, tvl, network, img }) => {
                             </div>
                           </div>
                         </div>
-                        <div>
+                        <div className="ml">
                           {isActive ? <AiFillCaretUp /> : <AiFillCaretDown />}
                         </div>
                       </div>
