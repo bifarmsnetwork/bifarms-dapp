@@ -7,9 +7,10 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import modal, { web3Modal } from "../../modal";
 import { NetworkContext } from "../../context/NetworkContext";
+import useOnClickOutside from '../../hooks/useOnClickOutside'
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
   const [instance, setInstance] = useState();
   const [provider, setProvider] = useState();
   const [error, setError] = useState();
@@ -18,15 +19,18 @@ const Navbar = () => {
   const [width,setWidth] = useState(window.innerWidth)
   let breakpoint = 1000
 
+  const ref = useRef()
+  useOnClickOutside(ref, () => showModal(false));
+
   const [account,setAccount] = useContext(NetworkContext)
   console.log(account)
-  const handleClick = () => {
-    setOpen(!open);
-  };
+  // const handleClick = () => {
+  //   setOpen(!open);
+  // };
 
-  const closeMenu = () => {
-    setOpen(false);
-  };
+  // const closeMenu = () => {
+  //   setOpen(false);
+  // };
 
   const connectWallet = async () => {
     try {
@@ -119,24 +123,24 @@ const Navbar = () => {
           </Link>
           <div className="nav">
             <div className="n-item n-margin">
-              <Link to="/" className="nav-link" onClick={closeMenu}>
+              <Link to="/" className="nav-link" >
                 Launchpad
               </Link>
             </div>
             <div className="n-item n-margin">
-              <Link to="/Farms" className="nav-link" onClick={closeMenu}>
+              <Link to="/Farms" className="nav-link">
                 Farms
               </Link>
               
             </div>
             <div className="n-item n-margin">
-              <Link to="/Pools" className="nav-link" onClick={closeMenu}>
+              <Link to="/Pools" className="nav-link">
                 Pool
               </Link>
               
             </div>
             <div className="n-item n-margin">
-              <Link to="/Airdrop" className="nav-link" onClick={closeMenu}>
+              <Link to="/Airdrop" className="nav-link">
                 Airdrop
               </Link>
             </div>
@@ -158,27 +162,27 @@ const Navbar = () => {
             <button style={{ backgroundColor: "transparent", border: "none" }}>
               <img src={Dots} alt="Nav" onClick={flipNav} />
             </button>
-            {modalMobile?<ul id="nav-list" className="nav-list">
+            {modalMobile?<ul id="nav-list" className="nav-list" ref={ref}>
               <li className="n-item select-tab" >
-               <Link to="/" className="nav-link" onClick={closeMenu}>
+               <Link to="/" className="nav-link" onClick={flipNav}>
                 Launchpad
               <i className="iconfont icon-icons-launchpad"></i>
               </Link>
               </li>
               <li className="n-item" >
-                <Link to="/Farms" className="nav-link" onClick={closeMenu}>
+                <Link to="/Farms" className="nav-link" onClick={flipNav}>
                 Farms
                 </Link>
               
               </li>
               <li className="n-item" >
-               <Link to="/Pools" className="nav-link" onClick={closeMenu}>
+               <Link to="/Pools" className="nav-link" onClick={flipNav}>
                 Pool
                </Link>
               
               </li>
               <li className="n-item" >
-               <Link to="/Airdrop" className="nav-link" onClick={closeMenu}>
+               <Link to="/Airdrop" className="nav-link" onClick={flipNav}>
                 Airdrop
               </Link>
               </li>
